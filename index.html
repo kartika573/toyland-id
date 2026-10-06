@@ -1,0 +1,3479 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- =====================================================================
+       TOYLAND.ID - OFFICIAL BUSINESS & COMPANY PROFILE WEBSITE
+       Tugas Mata Kuliah: Digital Marketing (2026)
+       Konsep Bisnis: Retail + Grosir + Reseller
+       Tagline: "Play. Learn. Grow."
+       ===================================================================== -->
+  <title>Toyland.id - Play. Learn. Grow. | Toko Mainan Edukatif, Retail, Grosir & Reseller</title>
+  <meta name="description" content="Toyland.id menyediakan beragam pilihan mainan anak edukatif, puzzle kayu, building blocks, dan mainan kreatif untuk usia 2–12 tahun. Melayani retail, grosir, dan kemitraan reseller se-Indonesia." />
+  <meta name="keywords" content="mainan anak, mainan edukatif, puzzle kayu, building blocks, montessori, grosir mainan, reseller mainan, toyland, toyland id" />
+  <meta name="author" content="Toyland.id" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://toyland.id/" />
+  <meta property="og:title" content="Toyland.id - Play. Learn. Grow." />
+  <meta property="og:description" content="Pusat retail, grosir, dan kemitraan reseller mainan anak edukatif terlengkap di Indonesia. Temukan dunia bermain yang lebih seru!" />
+  <meta property="og:image" content="images/hero-banner.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Toyland.id - Toko Mainan Edukatif Anak" />
+  <meta name="twitter:description" content="Pilihan mainan edukasi bermutu tinggi untuk melatih kognitif, motorik, dan kreativitas buah hati." />
+  <meta name="twitter:image" content="images/hero-banner.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎈</text></svg>" />
+
+  <!-- Google Fonts: Nunito & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- =====================================================================
+       DIGITAL MARKETING TRACKING PLACEHOLDERS (Standar Akademik)
+       Jangan gunakan ID palsu. Gunakan GA_MEASUREMENT_ID & META_PIXEL_ID
+       ===================================================================== -->
+  <!-- Google Analytics Placeholder:
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  -->
+
+  <!-- Meta Pixel Placeholder:
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'META_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  -->
+
+  <style>
+    /* ==========================================================================
+       TOYLAND.ID - MASTER DESIGN SYSTEM (CSS TERPADU)
+       Theme: Playful, Cheerful, Clean, Modern, Professional, Family-Friendly
+       ========================================================================== */
+    :root {
+      --color-primary-yellow: #FFB800;
+      --color-primary-yellow-hover: #E5A600;
+      --color-yellow-light: #FFF9E6;
+      --color-yellow-surface: #FEF3C7;
+      
+      --color-primary-blue: #2563EB;
+      --color-primary-blue-dark: #1E40AF;
+      --color-blue-light: #EFF6FF;
+      --color-blue-soft: #DBEAFE;
+      
+      --color-accent-orange: #FF6B35;
+      --color-accent-orange-hover: #E8551F;
+      --color-orange-light: #FFF4EE;
+      
+      --color-accent-green: #10B981;
+      --color-accent-green-dark: #059669;
+      --color-green-light: #ECFDF5;
+      
+      --color-white: #FFFFFF;
+      --color-bg-body: #F8FAFC;
+      --color-bg-card: #FFFFFF;
+      --color-bg-subtle: #F1F5F9;
+      --color-border: #E2E8F0;
+      --color-border-hover: #CBD5E1;
+      --color-text-main: #1E293B;
+      --color-text-muted: #64748B;
+      --color-text-subtle: #94A3B8;
+
+      --font-family-sans: 'Nunito', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-family-display: 'Poppins', 'Nunito', sans-serif;
+
+      --shadow-xs: 0 1px 3px rgba(15, 23, 42, 0.05);
+      --shadow-sm: 0 4px 12px rgba(37, 99, 235, 0.06);
+      --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 16px 36px rgba(15, 23, 42, 0.12);
+      --shadow-glow-yellow: 0 10px 25px rgba(255, 184, 0, 0.35);
+      --shadow-glow-blue: 0 10px 25px rgba(37, 99, 235, 0.3);
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-pill: 9999px;
+
+      --container-max-width: 1240px;
+      --transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-spring: 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-family-sans);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--color-text-main);
+      background-color: var(--color-bg-body);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+      color: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max-width);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .section-spacing {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    @media (max-width: 768px) {
+      .section-spacing {
+        padding-top: 45px;
+        padding-bottom: 45px;
+      }
+    }
+
+    .text-center { text-align: center; }
+    .text-left { text-align: left; }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+    }
+
+    .section-tag.yellow { background-color: var(--color-yellow-surface); color: #B45309; }
+    .section-tag.blue { background-color: var(--color-blue-light); color: var(--color-primary-blue); }
+    .section-tag.green { background-color: var(--color-green-light); color: var(--color-accent-green-dark); }
+    .section-tag.orange { background-color: var(--color-orange-light); color: var(--color-accent-orange); }
+
+    .section-title {
+      font-family: var(--font-family-display);
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--color-text-main);
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+
+    @media (max-width: 768px) {
+      .section-title { font-size: 1.7rem; }
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--color-text-muted);
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: var(--radius-pill);
+      font-family: var(--font-family-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      transition: all var(--transition-base);
+      text-align: center;
+      user-select: none;
+      border: 2px solid transparent;
+    }
+
+    .btn:active { transform: scale(0.97); }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--color-primary-yellow) 0%, #F59E0B 100%);
+      color: #78350F;
+      box-shadow: var(--shadow-glow-yellow);
+    }
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #FBBF24 0%, #D97706 100%);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background-color: var(--color-primary-blue);
+      color: var(--color-white);
+      box-shadow: var(--shadow-glow-blue);
+    }
+    .btn-secondary:hover {
+      background-color: var(--color-primary-blue-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-blue {
+      background-color: transparent;
+      border-color: var(--color-primary-blue);
+      color: var(--color-primary-blue);
+    }
+    .btn-outline-blue:hover {
+      background-color: var(--color-blue-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-orange {
+      background-color: var(--color-accent-orange);
+      color: var(--color-white);
+      box-shadow: 0 8px 20px rgba(255, 107, 53, 0.35);
+    }
+    .btn-orange:hover {
+      background-color: var(--color-accent-orange-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: var(--color-white);
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+    }
+    .btn-whatsapp:hover {
+      background-color: #1EBE5D;
+      transform: translateY(-2px);
+    }
+
+    .btn-sm { padding: 8px 16px; font-size: 0.85rem; }
+    .btn-lg { padding: 15px 30px; font-size: 1.05rem; }
+
+    /* Badges */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+    .badge-yellow { background: var(--color-yellow-surface); color: #B45309; }
+    .badge-blue { background: var(--color-blue-light); color: var(--color-primary-blue); }
+    .badge-green { background: var(--color-green-light); color: var(--color-accent-green-dark); }
+    .badge-orange { background: var(--color-orange-light); color: var(--color-accent-orange); }
+    .badge-red { background: #FEE2E2; color: #DC2626; }
+
+    /* Academic Disclaimer Notice */
+    .academic-notice {
+      background-color: #EFF6FF;
+      border: 1px dashed #93C5FD;
+      border-radius: var(--radius-md);
+      padding: 12px 18px;
+      font-size: 0.85rem;
+      color: #1E40AF;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 16px 0;
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       NAVBAR (STICKY)
+       ========================================================================== */
+    .navbar-wrapper {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .brand-logo-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--color-primary-yellow) 0%, var(--color-accent-orange) 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-white);
+      font-size: 1.5rem;
+      box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+      transform: rotate(-3deg);
+      transition: transform var(--transition-spring);
+    }
+    .brand-logo:hover .brand-logo-icon {
+      transform: rotate(6deg) scale(1.08);
+    }
+
+    .brand-name {
+      font-family: var(--font-family-display);
+      font-size: 1.45rem;
+      font-weight: 900;
+      line-height: 1.1;
+      color: var(--color-primary-blue-dark);
+      letter-spacing: -0.5px;
+    }
+    .brand-name span { color: var(--color-accent-orange); }
+
+    .brand-tagline {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .nav-link {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--color-text-main);
+      padding: 8px 4px;
+      position: relative;
+      transition: color 0.15s ease;
+      cursor: pointer;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: var(--color-primary-blue);
+    }
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--color-primary-yellow), var(--color-accent-orange));
+      border-radius: var(--radius-pill);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-icon-btn {
+      position: relative;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: var(--color-bg-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-main);
+      transition: all 0.15s ease;
+      font-size: 1.1rem;
+    }
+    .nav-icon-btn:hover {
+      background-color: var(--color-blue-light);
+      color: var(--color-primary-blue);
+      transform: translateY(-2px);
+    }
+
+    .cart-badge {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      background-color: var(--color-accent-orange);
+      color: var(--color-white);
+      font-size: 0.7rem;
+      font-weight: 800;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--color-white);
+    }
+
+    .hamburger-btn {
+      display: none;
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 1024px) {
+      .nav-links { display: none; }
+      .hamburger-btn { display: flex; }
+    }
+
+    /* Mobile Drawer */
+    .mobile-nav-overlay {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(15, 23, 42, 0.5);
+      backdrop-filter: blur(4px);
+      z-index: 1050;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-base);
+    }
+    .mobile-nav-overlay.open { opacity: 1; pointer-events: auto; }
+
+    .mobile-nav-drawer {
+      position: fixed;
+      top: 0;
+      right: -320px;
+      width: 300px;
+      height: 100vh;
+      background-color: var(--color-white);
+      z-index: 1100;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-lg);
+      transition: right var(--transition-spring);
+      overflow-y: auto;
+    }
+    .mobile-nav-drawer.open { right: 0; }
+
+    .mobile-nav-link {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-text-main);
+      padding: 12px 14px;
+      border-radius: var(--radius-md);
+      text-align: left;
+      width: 100%;
+    }
+    .mobile-nav-link:hover, .mobile-nav-link.active {
+      background-color: var(--color-blue-light);
+      color: var(--color-primary-blue);
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      background: linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 100%);
+      padding: 55px 0 75px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 48px;
+    }
+
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 36px;
+      }
+    }
+
+    .hero-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border-radius: var(--radius-pill);
+      background-color: var(--color-white);
+      border: 1px solid var(--color-yellow-surface);
+      box-shadow: var(--shadow-xs);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #B45309;
+      margin-bottom: 20px;
+    }
+
+    .hero-title {
+      font-family: var(--font-family-display);
+      font-size: 3.1rem;
+      font-weight: 900;
+      line-height: 1.18;
+      color: var(--color-text-main);
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+    .hero-title span.highlight { color: var(--color-primary-blue); }
+
+    @media (max-width: 768px) {
+      .hero-title { font-size: 2.2rem; }
+    }
+
+    .hero-description {
+      font-size: 1.12rem;
+      line-height: 1.7;
+      color: var(--color-text-muted);
+      margin-bottom: 30px;
+      max-width: 580px;
+    }
+    @media (max-width: 992px) {
+      .hero-description { margin-left: auto; margin-right: auto; }
+    }
+
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 992px) {
+      .hero-buttons { justify-content: center; }
+    }
+
+    .hero-image-wrapper {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 4px solid var(--color-white);
+      background-color: var(--color-white);
+      transition: transform var(--transition-base);
+    }
+    .hero-image-wrapper img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .hero-floating-card {
+      position: absolute;
+      bottom: -18px;
+      left: -18px;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      padding: 14px 22px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      animation: floatUpDown 4s ease-in-out infinite;
+    }
+    @media (max-width: 600px) {
+      .hero-floating-card { position: static; margin-top: 16px; display: inline-flex; animation: none; }
+      .hero-image-wrapper img { height: 260px; }
+    }
+
+    @keyframes floatUpDown {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* Trust Section */
+    .trust-section {
+      background-color: var(--color-white);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      padding: 30px 0;
+    }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 992px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .trust-grid { grid-template-columns: 1fr; } }
+
+    .trust-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 10px;
+    }
+    .trust-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+    .trust-icon.blue { background-color: var(--color-blue-light); color: var(--color-primary-blue); }
+    .trust-icon.yellow { background-color: var(--color-yellow-surface); color: #B45309; }
+    .trust-icon.green { background-color: var(--color-green-light); color: var(--color-accent-green-dark); }
+    .trust-icon.orange { background-color: var(--color-orange-light); color: var(--color-accent-orange); }
+
+    .trust-title {
+      font-family: var(--font-family-display);
+      font-size: 0.98rem;
+      font-weight: 800;
+      color: var(--color-text-main);
+      margin-bottom: 2px;
+    }
+    .trust-desc { font-size: 0.82rem; color: var(--color-text-muted); line-height: 1.35; }
+
+    /* Category Cards */
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 32px;
+    }
+    @media (max-width: 992px) { .categories-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 640px) { .categories-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
+
+    .category-card {
+      background-color: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 22px 18px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all var(--transition-base);
+      box-shadow: var(--shadow-xs);
+      cursor: pointer;
+    }
+    .category-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--color-primary-blue);
+      box-shadow: var(--shadow-md);
+    }
+    .category-icon-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--color-yellow-light) 0%, var(--color-yellow-surface) 100%);
+      color: #B45309;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 14px;
+      transition: transform var(--transition-spring);
+    }
+    .category-card:hover .category-icon-box {
+      transform: scale(1.1) rotate(5deg);
+      background: linear-gradient(135deg, var(--color-blue-light) 0%, var(--color-blue-soft) 100%);
+      color: var(--color-primary-blue);
+    }
+    .category-name {
+      font-family: var(--font-family-display);
+      font-size: 1.02rem;
+      font-weight: 800;
+      color: var(--color-text-main);
+      margin-bottom: 4px;
+    }
+
+    /* Product Cards & Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      margin-top: 32px;
+    }
+    @media (max-width: 1024px) { .product-grid { grid-template-columns: repeat(3, 1fr); gap: 18px; } }
+    @media (max-width: 768px) { .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
+
+    .product-card {
+      background-color: var(--color-white);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all var(--transition-base);
+      box-shadow: var(--shadow-xs);
+      position: relative;
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: #93C5FD;
+    }
+    .product-image-container {
+      position: relative;
+      width: 100%;
+      padding-top: 85%;
+      background-color: #F8FAFC;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .product-image-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .product-card:hover .product-image-container img { transform: scale(1.06); }
+
+    .product-badge-overlay { position: absolute; top: 10px; left: 10px; z-index: 2; }
+    .product-age-overlay {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      z-index: 2;
+      background-color: rgba(15, 23, 42, 0.75);
+      color: var(--color-white);
+      backdrop-filter: blur(4px);
+      padding: 2px 8px;
+      border-radius: var(--radius-pill);
+      font-size: 0.7rem;
+      font-weight: 700;
+    }
+
+    .product-details {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    @media (max-width: 768px) { .product-details { padding: 12px; } }
+
+    .product-category {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--color-primary-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .product-title {
+      font-family: var(--font-family-display);
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--color-text-main);
+      line-height: 1.35;
+      margin-bottom: 6px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      height: 2.7em;
+      cursor: pointer;
+    }
+    .product-title:hover { color: var(--color-primary-blue); }
+
+    .product-rating-row {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 10px;
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+    }
+    .product-price-row {
+      margin-top: auto;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .product-price {
+      font-family: var(--font-family-display);
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--color-text-main);
+    }
+    .product-original-price {
+      font-size: 0.82rem;
+      color: var(--color-text-subtle);
+      text-decoration: line-through;
+    }
+    .product-card-actions {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 6px;
+    }
+
+    /* Why Section */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 36px;
+    }
+    @media (max-width: 992px) { .why-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 540px) { .why-grid { grid-template-columns: 1fr; } }
+
+    .why-card {
+      background-color: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 28px 20px;
+      text-align: center;
+      box-shadow: var(--shadow-xs);
+      transition: all var(--transition-base);
+    }
+    .why-card:hover { transform: translateY(-5px); border-color: #FCD34D; box-shadow: var(--shadow-md); }
+    .why-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 20px;
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+    }
+
+    /* Age Groups */
+    .age-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 32px;
+    }
+    @media (max-width: 992px) { .age-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .age-grid { grid-template-columns: 1fr; } }
+
+    .age-card {
+      background-color: var(--color-white);
+      border-radius: var(--radius-lg);
+      border: 2px solid transparent;
+      padding: 22px;
+      text-align: center;
+      box-shadow: var(--shadow-xs);
+      transition: all var(--transition-base);
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .age-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .age-card:nth-child(1) { border-color: #FDE68A; background-color: #FFFBEB; }
+    .age-card:nth-child(2) { border-color: #BAE6FD; background-color: #F0F9FF; }
+    .age-card:nth-child(3) { border-color: #BBF7D0; background-color: #F0FDF4; }
+    .age-card:nth-child(4) { border-color: #DDD6FE; background-color: #F5F3FF; }
+
+    /* Promo Banner */
+    .promo-banner {
+      background: linear-gradient(135deg, #1E40AF 0%, #2563EB 50%, #0284C7 100%);
+      border-radius: var(--radius-xl);
+      color: var(--color-white);
+      padding: 44px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    @media (max-width: 768px) { .promo-banner { padding: 30px 20px; } }
+    .promo-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      gap: 32px;
+    }
+    @media (max-width: 900px) { .promo-grid { grid-template-columns: 1fr; text-align: center; } }
+    .promo-image-box {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+      border: 4px solid rgba(255, 255, 255, 0.4);
+    }
+    .promo-image-box img { width: 100%; height: 260px; object-fit: cover; }
+
+    /* Target Bisnis Section */
+    .growth-section {
+      background-color: #0F172A;
+      color: var(--color-white);
+      border-radius: var(--radius-xl);
+      padding: 55px 44px;
+      margin: 50px 0;
+      position: relative;
+      box-shadow: var(--shadow-lg);
+    }
+    @media (max-width: 768px) { .growth-section { padding: 35px 20px; } }
+
+    .growth-badge-target {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 18px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 184, 0, 0.15);
+      border: 1px solid rgba(255, 184, 0, 0.4);
+      color: #FCD34D;
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+
+    .growth-target-number {
+      font-family: var(--font-family-display);
+      font-size: 3.3rem;
+      font-weight: 900;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #FFB800 0%, #FF6B35 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 768px) { .growth-target-number { font-size: 2.2rem; } }
+
+    .roadmap-flow {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+      margin-top: 32px;
+    }
+    @media (max-width: 1024px) { .roadmap-flow { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .roadmap-flow { grid-template-columns: 1fr; } }
+
+    .roadmap-step {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      transition: all var(--transition-base);
+    }
+    .roadmap-step:hover {
+      background: rgba(255, 255, 255, 0.09);
+      border-color: var(--color-primary-yellow);
+      transform: translateY(-4px);
+    }
+    .step-number {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--color-primary-yellow);
+      color: #78350F;
+      font-weight: 800;
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    /* Testimonials */
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 32px;
+    }
+    @media (max-width: 900px) { .testimonial-grid { grid-template-columns: 1fr; } }
+    .testimonial-card {
+      background-color: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-xs);
+    }
+    .testimonial-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: #93C5FD; }
+
+    /* Modals & Drawers */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(6px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-base);
+    }
+    .modal-overlay.open { opacity: 1; pointer-events: auto; }
+
+    .modal-card {
+      background-color: var(--color-white);
+      border-radius: var(--radius-xl);
+      max-width: 900px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      transform: scale(0.95);
+      transition: transform var(--transition-spring);
+    }
+    .modal-overlay.open .modal-card { transform: scale(1); }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: var(--color-bg-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-main);
+      z-index: 10;
+      font-weight: bold;
+    }
+    .modal-close-btn:hover { background-color: #FEE2E2; color: #DC2626; }
+
+    .modal-body {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 30px;
+      padding: 34px;
+    }
+    @media (max-width: 768px) {
+      .modal-body { grid-template-columns: 1fr; padding: 22px; gap: 20px; }
+    }
+    .modal-gallery img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+    }
+    @media (max-width: 768px) { .modal-gallery img { height: 230px; } }
+
+    /* Cart Drawer */
+    .cart-drawer-overlay {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(15, 23, 42, 0.5);
+      backdrop-filter: blur(4px);
+      z-index: 1500;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-base);
+    }
+    .cart-drawer-overlay.open { opacity: 1; pointer-events: auto; }
+
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      right: -460px;
+      width: 440px;
+      max-width: 92vw;
+      height: 100vh;
+      background-color: var(--color-white);
+      z-index: 1600;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-lg);
+      transition: right var(--transition-spring);
+    }
+    .cart-drawer.open { right: 0; }
+
+    .cart-header {
+      padding: 18px 22px;
+      border-bottom: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .cart-items-list {
+      flex-grow: 1;
+      overflow-y: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .cart-item {
+      display: grid;
+      grid-template-columns: 68px 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .cart-item-img {
+      width: 68px;
+      height: 68px;
+      border-radius: var(--radius-md);
+      object-fit: cover;
+      border: 1px solid var(--color-border);
+    }
+    .qty-control { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+    .qty-btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      background-color: var(--color-bg-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .qty-btn:hover { background-color: var(--color-yellow-surface); color: #B45309; }
+
+    .cart-footer {
+      padding: 18px 22px;
+      border-top: 1px solid var(--color-border);
+      background-color: #F8FAFC;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-wa-btn {
+      position: fixed;
+      bottom: 26px;
+      right: 26px;
+      z-index: 999;
+      background-color: #25D366;
+      color: var(--color-white);
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
+      font-size: 1.9rem;
+      transition: all var(--transition-spring);
+      cursor: pointer;
+    }
+    .floating-wa-btn:hover { transform: scale(1.1) rotate(5deg); background-color: #1EBE5D; }
+    .wa-pulse {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 2px solid #25D366;
+      animation: waPulseAnim 2s infinite;
+      pointer-events: none;
+    }
+    @keyframes waPulseAnim {
+      0% { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(1.5); opacity: 0; }
+    }
+
+    /* Form Fields */
+    .form-group { margin-bottom: 14px; text-align: left; }
+    .form-label { display: block; font-size: 0.86rem; font-weight: 700; color: var(--color-text-main); margin-bottom: 5px; }
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      font-size: 0.92rem;
+      background-color: var(--color-white);
+      transition: all 0.15s ease;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--color-primary-blue);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+
+    /* Toast */
+    .toast-notice {
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #0F172A;
+      color: var(--color-white);
+      padding: 12px 24px;
+      border-radius: var(--radius-pill);
+      box-shadow: var(--shadow-lg);
+      font-size: 0.9rem;
+      font-weight: 600;
+      z-index: 3000;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      animation: toastPop 0.3s ease-out;
+    }
+    @keyframes toastPop {
+      from { opacity: 0; transform: translate(-50%, 20px); }
+      to { opacity: 1; transform: translate(-50%, 0); }
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #0F172A;
+      color: #94A3B8;
+      padding: 65px 0 28px;
+      border-top: 1px solid #1E293B;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 36px;
+      margin-bottom: 45px;
+    }
+    @media (max-width: 992px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 540px) { .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
+    .footer-brand h3 {
+      font-family: var(--font-family-display);
+      font-size: 1.55rem;
+      font-weight: 900;
+      color: var(--color-white);
+      margin-bottom: 4px;
+    }
+    .footer-title {
+      font-family: var(--font-family-display);
+      font-size: 1.02rem;
+      font-weight: 800;
+      color: var(--color-white);
+      margin-bottom: 16px;
+    }
+    .footer-link {
+      font-size: 0.88rem;
+      color: #94A3B8;
+      transition: color 0.15s ease;
+      cursor: pointer;
+      display: block;
+      margin-bottom: 8px;
+      text-align: left;
+    }
+    .footer-link:hover { color: var(--color-primary-yellow); }
+    .social-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background-color: #1E293B;
+      color: var(--color-white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      margin-right: 8px;
+      transition: all 0.15s ease;
+    }
+    .social-btn:hover { background-color: var(--color-primary-yellow); color: #0F172A; transform: translateY(-2px); }
+
+    .footer-bottom {
+      padding-top: 22px;
+      border-top: 1px solid #1E293B;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 0.84rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =====================================================================
+       NAVBAR (STICKY)
+       ===================================================================== -->
+  <header class="navbar-wrapper">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="#home" class="brand-logo" onclick="switchPage('home')">
+          <div class="brand-logo-icon">🎈</div>
+          <div class="brand-logo-text">
+            <span class="brand-name">Toyland<span>.id</span></span>
+            <span class="brand-tagline">Play • Learn • Grow</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="nav-links">
+          <button class="nav-link active" data-page="home" onclick="switchPage('home')">Home</button>
+          <button class="nav-link" data-page="about" onclick="switchPage('about')">Tentang Kami</button>
+          <button class="nav-link" data-page="products" onclick="switchPage('products')">Produk</button>
+          <button class="nav-link" data-page="promo" onclick="switchPage('promo')">Promo</button>
+          <button class="nav-link" data-page="reseller" onclick="switchPage('reseller')">Grosir & Reseller</button>
+          <button class="nav-link" data-page="contact" onclick="switchPage('contact')">Kontak</button>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="nav-actions">
+          <button class="nav-icon-btn" title="Cari Mainan" onclick="triggerSearchFocus()" aria-label="Cari Produk">🔍</button>
+          <button class="nav-icon-btn" onclick="openCartDrawer()" title="Keranjang Belanja" aria-label="Buka Keranjang">
+            🛒
+            <span class="cart-badge" id="cart-badge-count" style="display:none;">0</span>
+          </button>
+          <button class="btn btn-primary btn-sm" onclick="switchPage('products')">Belanja Sekarang</button>
+          <button class="hamburger-btn" onclick="toggleMobileNav(true)" aria-label="Buka Menu">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-overlay" id="mobile-overlay" onclick="toggleMobileNav(false)"></div>
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; padding-bottom:14px; border-bottom:1px solid #E2E8F0;">
+      <div class="brand-logo">
+        <div class="brand-logo-icon" style="width:36px; height:36px; font-size:1.2rem;">🎈</div>
+        <span class="brand-name" style="font-size:1.2rem;">Toyland<span>.id</span></span>
+      </div>
+      <button class="modal-close-btn" style="position:static;" onclick="toggleMobileNav(false)">✕</button>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:8px;">
+      <button class="mobile-nav-link active" data-page="home" onclick="switchPage('home')">Home</button>
+      <button class="mobile-nav-link" data-page="about" onclick="switchPage('about')">Tentang Kami</button>
+      <button class="mobile-nav-link" data-page="products" onclick="switchPage('products')">Produk</button>
+      <button class="mobile-nav-link" data-page="promo" onclick="switchPage('promo')">Promo</button>
+      <button class="mobile-nav-link" data-page="reseller" onclick="switchPage('reseller')">Grosir & Reseller</button>
+      <button class="mobile-nav-link" data-page="contact" onclick="switchPage('contact')">Kontak</button>
+    </div>
+    <div style="margin-top:auto; padding-top:20px;">
+      <button class="btn btn-primary btn-lg" style="width:100%;" onclick="switchPage('products')">Mulai Belanja 🛍️</button>
+      <div style="text-align:center; font-size:0.75rem; color:#64748B; margin-top:8px;">Konsep: Retail • Grosir • Reseller</div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       MAIN VIEW CONTAINER (SINGLE PAGE ARCHITECTURE)
+       ===================================================================== -->
+  <main id="main-content">
+    
+    <!-- 1. HOMEPAGE VIEW -->
+    <div id="view-home">
+      <!-- HERO -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div>
+              <div class="hero-badge-pill">
+                <span>🎈</span>
+                <span>Official Business of Toyland.id</span>
+                <span style="opacity:0.4;">|</span>
+                <span style="color:var(--color-primary-blue);">Retail • Grosir • Reseller</span>
+              </div>
+              <h1 class="hero-title">
+                Temukan Dunia Bermain yang <span class="highlight">Lebih Seru!</span>
+              </h1>
+              <p class="hero-description">
+                Mainan pilihan untuk menemani anak bermain, belajar, berkreasi, dan tumbuh dengan cara yang menyenangkan. Terjamin aman, bersertifikat SNI, dan mendukung stimulasi motorik & kognitif buah hati.
+              </p>
+              <div class="hero-buttons">
+                <button class="btn btn-primary btn-lg" onclick="switchPage('products')">Belanja Sekarang 🛍️</button>
+                <button class="btn btn-outline-blue btn-lg" onclick="switchPage('products')">Lihat Produk 🔍</button>
+              </div>
+              <div style="display:flex; gap:18px; margin-top:28px; flex-wrap:wrap;">
+                <div style="display:flex; align-items:center; gap:6px; font-size:0.86rem; font-weight:700;"><span style="color:#10B981;">✓</span> Material Aman & Non-Toxic</div>
+                <div style="display:flex; align-items:center; gap:6px; font-size:0.86rem; font-weight:700;"><span style="color:#10B981;">✓</span> Montessori & STEAM</div>
+                <div style="display:flex; align-items:center; gap:6px; font-size:0.86rem; font-weight:700;"><span style="color:#10B981;">✓</span> Kirim Seluruh Indonesia</div>
+              </div>
+            </div>
+
+            <div>
+              <div class="hero-image-wrapper">
+                <img src="images/hero-banner.jpg" alt="Mainan Edukatif Anak Toyland.id" />
+                <div class="hero-floating-card">
+                  <div class="trust-icon yellow" style="width:42px; height:42px; font-size:1.2rem;">📦</div>
+                  <div>
+                    <div style="font-size:0.78rem; color:#64748B; font-weight:700;">Konsep Bisnis Terpadu</div>
+                    <div style="font-family:var(--font-family-display); font-size:0.95rem; font-weight:800; color:#1E293B;">Retail • Grosir • Reseller</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRUST SECTION -->
+      <section class="trust-section">
+        <div class="container">
+          <div class="trust-grid">
+            <div class="trust-card">
+              <div class="trust-icon blue">🚚</div>
+              <div><h4 class="trust-title">Pengiriman Aman</h4><p class="trust-desc">Packing bubble wrap tebal & dus kuat ke seluruh Indonesia.</p></div>
+            </div>
+            <div class="trust-card">
+              <div class="trust-icon yellow">🎁</div>
+              <div><h4 class="trust-title">Pilihan Beragam</h4><p class="trust-desc">Ratusan mainan edukatif, puzzle, blocks & kreasi anak.</p></div>
+            </div>
+            <div class="trust-card">
+              <div class="trust-icon green">💳</div>
+              <div><h4 class="trust-title">Pembayaran Mudah</h4><p class="trust-desc">Transfer bank, e-wallet, dan COD bayar di tempat.</p></div>
+            </div>
+            <div class="trust-card">
+              <div class="trust-icon orange">💬</div>
+              <div><h4 class="trust-title">Customer Support</h4><p class="trust-desc">Konsultasi ramah via WhatsApp siap membantu Anda.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KATEGORI MAINAN -->
+      <section class="section-spacing">
+        <div class="container">
+          <div class="text-center">
+            <span class="section-tag yellow">Eksplorasi Koleksi</span>
+            <h2 class="section-title">Temukan Mainan Favoritmu</h2>
+            <p class="section-subtitle">Pilih kategori mainan terbaik yang dirancang khusus untuk memicu imajinasi, keingintahuan, dan kegembiraan belajar buah hati.</p>
+          </div>
+          <div class="categories-grid" id="home-categories-grid"></div>
+        </div>
+      </section>
+
+      <!-- BEST SELLER -->
+      <section class="section-spacing" style="background-color:var(--color-bg-body);">
+        <div class="container">
+          <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
+            <div>
+              <span class="section-tag blue">Terlaris & Terpopuler</span>
+              <h2 class="section-title" style="margin-bottom:4px;">Produk Favorit Pelanggan</h2>
+              <p class="section-subtitle" style="margin:0; text-align:left;">Mainan edukasi paling banyak dipilih oleh ribuan orang tua dan institusi pendidikan anak.</p>
+            </div>
+            <button class="btn btn-outline-blue" onclick="switchPage('products')">Lihat Semua di Katalog →</button>
+          </div>
+          <div class="product-grid" id="home-bestseller-grid"></div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE TOYLAND -->
+      <section class="section-spacing" style="background:#FFFFFF;">
+        <div class="container">
+          <div class="text-center">
+            <span class="section-tag orange">Komitmen Kualitas</span>
+            <h2 class="section-title">Kenapa Pilih Toyland.id?</h2>
+            <p class="section-subtitle">Kami hadir bukan sekadar menjual mainan, melainkan menjadi sahabat terpercaya keluarga Indonesia dalam mendampingi masa emas anak.</p>
+          </div>
+          <div class="why-grid">
+            <div class="why-card">
+              <div class="why-icon" style="background-color:var(--color-yellow-surface); color:#B45309;">🎨</div>
+              <h3 style="font-family:var(--font-family-display); font-size:1.15rem; font-weight:800; margin-bottom:8px;">Pilihan Beragam</h3>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);">Berbagai pilihan mainan untuk kebutuhan anak dari bayi hingga usia sekolah.</p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon" style="background-color:var(--color-blue-light); color:var(--color-primary-blue);">💰</div>
+              <h3 style="font-family:var(--font-family-display); font-size:1.15rem; font-weight:800; margin-bottom:8px;">Harga Bersahabat</h3>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);">Pilihan produk berkualitas dengan harga yang terjangkau untuk setiap keluarga.</p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon" style="background-color:var(--color-green-light); color:var(--color-accent-green-dark);">🏬</div>
+              <h3 style="font-family:var(--font-family-display); font-size:1.15rem; font-weight:800; margin-bottom:8px;">Retail & Grosir</h3>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);">Melayani pembelian satuan maupun jumlah besar untuk toko dan institusi.</p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon" style="background-color:var(--color-orange-light); color:var(--color-accent-orange);">🛒</div>
+              <h3 style="font-family:var(--font-family-display); font-size:1.15rem; font-weight:800; margin-bottom:8px;">Belanja Mudah</h3>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);">Pesan melalui website atau langsung konsultasi ramah via WhatsApp resmi.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- USIA ANAK -->
+      <section class="section-spacing">
+        <div class="container">
+          <div class="text-center">
+            <span class="section-tag green">Panduan Tumbuh Kembang</span>
+            <h2 class="section-title">Pilih Mainan Sesuai Usia</h2>
+            <p class="section-subtitle">Setiap tahapan usia membutuhkan stimulasi yang berbeda untuk mendukung perkembangan motorik dan kognitif buah hati.</p>
+          </div>
+          <div class="age-grid">
+            <div class="age-card" onclick="filterByAgeAndSwitch('2-3')">
+              <div class="trust-icon" style="background:#FFF; border-radius:50%; font-size:1.6rem; margin-bottom:12px;">👶</div>
+              <h3 style="font-family:var(--font-family-display); font-size:1.2rem; font-weight:800;">2–3 Tahun</h3>
+              <p style="font-size:0.85rem; color:var(--color-text-muted);">Sensorik & Motorik Halus</p>
+              <span style="font-size:0.8rem; font-weight:700; color:var(--color-primary-blue); margin-top:10px;">Lihat Rekomendasi →</span>
+            </div>
+            <div class="age-card" onclick="filterByAgeAndSwitch('4-5')">
+              <div class="trust-icon" style="background:#FFF; border-radius:50%; font-size:1.6rem; margin-bottom:12px;">🧒</div>
+              <h3 style="font-family:var(--font-family-display); font-size:1.2rem; font-weight:800;">4–5 Tahun</h3>
+              <p style="font-size:0.85rem; color:var(--color-text-muted);">Kreativitas & Sosialisasi</p>
+              <span style="font-size:0.8rem; font-weight:700; color:var(--color-primary-blue); margin-top:10px;">Lihat Rekomendasi →</span>
+            </div>
+            <div class="age-card" onclick="filterByAgeAndSwitch('6-8')">
+              <div class="trust-icon" style="background:#FFF; border-radius:50%; font-size:1.6rem; margin-bottom:12px;">🎒</div>
+              <h3 style="font-family:var(--font-family-display); font-size:1.2rem; font-weight:800;">6–8 Tahun</h3>
+              <p style="font-size:0.85rem; color:var(--color-text-muted);">Logika & Eksplorasi STEAM</p>
+              <span style="font-size:0.8rem; font-weight:700; color:var(--color-primary-blue); margin-top:10px;">Lihat Rekomendasi →</span>
+            </div>
+            <div class="age-card" onclick="filterByAgeAndSwitch('9-12')">
+              <div class="trust-icon" style="background:#FFF; border-radius:50%; font-size:1.6rem; margin-bottom:12px;">🚀</div>
+              <h3 style="font-family:var(--font-family-display); font-size:1.2rem; font-weight:800;">9–12 Tahun</h3>
+              <p style="font-size:0.85rem; color:var(--color-text-muted);">Problem Solving & Tantangan</p>
+              <span style="font-size:0.8rem; font-weight:700; color:var(--color-primary-blue); margin-top:10px;">Lihat Rekomendasi →</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROMO BANNER PREVIEW -->
+      <section class="container" style="margin:20px auto 40px;">
+        <div class="promo-banner">
+          <div class="promo-grid">
+            <div>
+              <span class="badge badge-yellow" style="margin-bottom:14px;">🎉 PROMO SPESIAL BULAN INI</span>
+              <h2 style="font-family:var(--font-family-display); font-size:2.2rem; font-weight:900; line-height:1.2; margin-bottom:12px;">Waktunya Main Lebih Seru!</h2>
+              <p style="font-size:1.05rem; opacity:0.95; line-height:1.6; margin-bottom:24px;">Temukan promo dan paket hemat Toyland.id. Paket bundling mainan edukatif dengan diskon hemat hingga 30%.</p>
+              <button class="btn btn-primary btn-lg" onclick="switchPage('promo')">Lihat Promo & Bundling 🎁</button>
+            </div>
+            <div class="promo-image-box">
+              <img src="images/promo-bundle.jpg" alt="Paket Hemat Mainan Edukatif" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GROSIR & RESELLER PREVIEW -->
+      <section class="section-spacing">
+        <div class="container">
+          <div style="background:linear-gradient(135deg, #FFFBEB 0%, #FFFFFF 100%); border:2px solid var(--color-yellow-surface); border-radius:var(--radius-xl); padding:40px; box-shadow:var(--shadow-md);">
+            <div style="display:grid; grid-template-columns:1.2fr 0.8fr; gap:36px; align-items:center;">
+              <div>
+                <span class="badge badge-yellow" style="margin-bottom:10px;">🤝 PELUANG KEMITRAAN BISNIS</span>
+                <h2 class="section-title" style="text-align:left; margin-bottom:12px;">Mau Mulai Jualan Mainan?</h2>
+                <p style="font-size:1.02rem; color:var(--color-text-muted); line-height:1.6; margin-bottom:20px;">
+                  Toyland.id membuka peluang grosir dan reseller untuk kamu yang ingin mengembangkan bisnis mainan anak yang menguntungkan dan tahan krisis.
+                </p>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:28px;">
+                  <div style="display:flex; align-items:center; gap:8px; font-weight:600;"><span style="color:#10B981;">✓</span> Harga khusus reseller</div>
+                  <div style="display:flex; align-items:center; gap:8px; font-weight:600;"><span style="color:#10B981;">✓</span> Pilihan produk beragam</div>
+                  <div style="display:flex; align-items:center; gap:8px; font-weight:600;"><span style="color:#10B981;">✓</span> Cocok online & offline</div>
+                  <div style="display:flex; align-items:center; gap:8px; font-weight:600;"><span style="color:#10B981;">✓</span> Katalog & materi promosi</div>
+                  <div style="display:flex; align-items:center; gap:8px; font-weight:600;"><span style="color:#10B981;">✓</span> Pemesanan mudah via WA</div>
+                </div>
+                <button class="btn btn-primary btn-lg" onclick="switchPage('reseller')">Daftar Jadi Reseller 💼</button>
+              </div>
+              <div style="border-radius:20px; overflow:hidden; box-shadow:var(--shadow-md);">
+                <img src="images/reseller-grosir.jpg" alt="Kemitraan Grosir & Reseller Toyland.id" style="width:100%; height:300px; object-fit:cover;" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TARGET BISNIS INFOGRAPHIC -->
+      <section class="container" id="target-bisnis-section">
+        <div class="growth-section">
+          <div style="max-width:880px; margin:0 auto; text-align:center;">
+            <div class="growth-badge-target">🎯 Strategic Business Target (12 Bulan)</div>
+            <h2 class="growth-target-number">Rp1.000.000.000 / Bulan</h2>
+            <div style="font-size:1.2rem; font-weight:800; color:#FCD34D; margin-bottom:14px;">
+              Target Omzet Realistis Dalam 12 Bulan ke Depan
+            </div>
+            
+            <!-- PENTING: Stated as TARGET -->
+            <div style="background:rgba(239,68,68,0.15); border:1px dashed #EF4444; border-radius:12px; padding:12px 18px; max-width:760px; margin:0 auto 20px; font-size:0.85rem; color:#FCA5A5;">
+              ⚠️ <strong>PENTING:</strong> Angka Rp1 Miliar per bulan adalah <strong>TARGET BISNIS STRATEGIS</strong> dalam perencanaan tugas Digital Marketing, bukan omzet yang telah dicapai saat ini.
+            </div>
+            <p style="font-size:1.1rem; color:#E2E8F0; line-height:1.7; max-width:750px; margin:0 auto 36px;">
+              "Target Toyland.id adalah mencapai omzet Rp1 miliar per bulan melalui pengembangan penjualan online, toko fisik, grosir, reseller, dan digital marketing."
+            </p>
+          </div>
+
+          <!-- Roadmap 5 Tahap -->
+          <div class="roadmap-flow">
+            <div class="roadmap-step">
+              <div class="step-number">1</div>
+              <div style="font-size:0.75rem; font-weight:700; color:#38BDF8; margin-bottom:6px;">BULAN 1–3</div>
+              <h4 style="font-family:var(--font-family-display); font-size:0.95rem; font-weight:700; color:#FFF; margin-bottom:6px;">Online & Brand Foundation</h4>
+              <p style="font-size:0.8rem; color:#94A3B8;">Peluncuran website katalog, optimasi SEO organik, dan konten edukasi media sosial awal.</p>
+            </div>
+            <div class="roadmap-step">
+              <div class="step-number">2</div>
+              <div style="font-size:0.75rem; font-weight:700; color:#38BDF8; margin-bottom:6px;">BULAN 4–6</div>
+              <h4 style="font-family:var(--font-family-display); font-size:0.95rem; font-weight:700; color:#FFF; margin-bottom:6px;">Social Media & Marketplace</h4>
+              <p style="font-size:0.8rem; color:#94A3B8;">Ekspansi Shopee, TikTok Shop, Live Shopping harian, serta kolaborasi micro-influencer.</p>
+            </div>
+            <div class="roadmap-step">
+              <div class="step-number">3</div>
+              <div style="font-size:0.75rem; font-weight:700; color:#38BDF8; margin-bottom:6px;">BULAN 7–8</div>
+              <h4 style="font-family:var(--font-family-display); font-size:0.95rem; font-weight:700; color:#FFF; margin-bottom:6px;">Retail Experience Toko Fisik</h4>
+              <p style="font-size:0.8rem; color:#94A3B8;">Showroom experience store di lokasi strategis ramah keluarga untuk kredibilitas offline.</p>
+            </div>
+            <div class="roadmap-step">
+              <div class="step-number">4</div>
+              <div style="font-size:0.75rem; font-weight:700; color:#38BDF8; margin-bottom:6px;">BULAN 9–10</div>
+              <h4 style="font-family:var(--font-family-display); font-size:0.95rem; font-weight:700; color:#FFF; margin-bottom:6px;">Jaringan Grosir & Reseller</h4>
+              <p style="font-size:0.8rem; color:#94A3B8;">Merekrut 100+ reseller aktif dan memasok toko mainan serta sekolah se-Indonesia.</p>
+            </div>
+            <div class="roadmap-step">
+              <div class="step-number">5</div>
+              <div style="font-size:0.75rem; font-weight:700; color:#38BDF8; margin-bottom:6px;">BULAN 11–12</div>
+              <h4 style="font-family:var(--font-family-display); font-size:0.95rem; font-weight:700; color:#FFF; margin-bottom:6px;">Ekspansi Menuju Rp1 Miliar</h4>
+              <p style="font-size:0.8rem; color:#94A3B8;">Integrasi omnichannel penuh menuju pencapaian target omzet Rp1 Miliar/Bulan secara berkelanjutan.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOCIAL MEDIA -->
+      <section class="section-spacing text-center" style="background:#FFF;">
+        <div class="container">
+          <span class="section-tag blue">Komunitas & Inspirasi Bermain</span>
+          <h2 class="section-title">Ikuti Keseruan Toyland.id</h2>
+          <p class="section-subtitle">Dapatkan tips parenting, ide bermain seru tanpa gadget di rumah, dan update promo flash sale terbaru.</p>
+          <div style="display:flex; justify-content:center; gap:16px; margin-top:28px; flex-wrap:wrap;">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" style="display:flex; align-items:center; gap:10px; padding:12px 22px; background:#FFF; border:1px solid #E2E8F0; border-radius:14px; box-shadow:var(--shadow-xs); font-weight:700;">
+              <span style="font-size:1.4rem;">📸</span><span>Instagram: @toyland.id</span>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noreferrer" style="display:flex; align-items:center; gap:10px; padding:12px 22px; background:#FFF; border:1px solid #E2E8F0; border-radius:14px; box-shadow:var(--shadow-xs); font-weight:700;">
+              <span style="font-size:1.4rem;">🎵</span><span>TikTok Live: @toyland.id</span>
+            </a>
+            <a href="https://shopee.co.id" target="_blank" rel="noreferrer" style="display:flex; align-items:center; gap:10px; padding:12px 22px; background:#FFF; border:1px solid #E2E8F0; border-radius:14px; box-shadow:var(--shadow-xs); font-weight:700;">
+              <span style="font-size:1.4rem;">🛍️</span><span>Shopee: Toyland.id Store</span>
+            </a>
+            <a href="https://wa.me/?text=Halo%20Toyland.id" target="_blank" rel="noreferrer" style="display:flex; align-items:center; gap:10px; padding:12px 22px; background:#FFF; border:1px solid #E2E8F0; border-radius:14px; box-shadow:var(--shadow-xs); font-weight:700;">
+              <span style="font-size:1.4rem;">💬</span><span>WhatsApp Customer Support</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section-spacing">
+        <div class="container">
+          <div class="text-center">
+            <span class="section-tag green">Cerita Pelanggan</span>
+            <h2 class="section-title">Apa Kata Mereka Tentang Toyland.id?</h2>
+            <p class="section-subtitle">Dengarkan pengalaman orang tua, pendidik, dan mitra bisnis yang telah mempercayakan kebutuhan mainan kepada kami.</p>
+          </div>
+          <div class="academic-notice" style="max-width:800px; margin:18px auto 0;">
+            <span>📌</span>
+            <div><strong>Catatan Simulasi Akademik:</strong> Testimoni di bawah ini adalah data contoh (dummy) untuk demonstrasi antarmuka tugas Digital Marketing.</div>
+          </div>
+          <div class="testimonial-grid" id="home-testimonial-grid"></div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="section-spacing text-center" style="background:linear-gradient(180deg, #F8FAFC 0%, #FFFBEB 100%);">
+        <div class="container">
+          <div style="max-width:650px; margin:0 auto;">
+            <span style="font-size:3rem; display:block; margin-bottom:10px;">🎈</span>
+            <h2 class="section-title">Yuk, Temukan Mainan Favoritmu Hari Ini!</h2>
+            <p class="section-subtitle" style="margin-bottom:26px;">Hadiahkan senyuman dan stimulasi belajar terbaik bagi buah hati bersama koleksi mainan edukatif terpercaya dari Toyland.id.</p>
+            <button class="btn btn-primary btn-lg" onclick="switchPage('products')">Mulai Belanja 🛍️</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 2. COMPANY PROFILE / TENTANG KAMI VIEW -->
+    <div id="view-about" style="display:none; padding-bottom:70px;">
+      <section style="background:linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 100%); padding:55px 0 35px; border-bottom:1px solid #E2E8F0;">
+        <div class="container text-center">
+          <span class="section-tag blue">Company Profile</span>
+          <h1 class="section-title">Tentang Toyland.id</h1>
+          <p class="section-subtitle">Mengenal lebih dekat visi, misi, dan komitmen kami dalam menghadirkan dunia bermain yang edukatif, aman, dan ramah anak.</p>
+        </div>
+      </section>
+
+      <section class="section-spacing">
+        <div class="container">
+          <div style="display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; align-items:center;">
+            <div>
+              <span class="badge badge-yellow" style="margin-bottom:10px;">🎈 Identitas & Konsep Bisnis</span>
+              <h2 style="font-family:var(--font-family-display); font-size:1.9rem; font-weight:800; margin-bottom:14px; line-height:1.3;">
+                "Play. Learn. Grow." — Sahabat Tumbuh Kembang Buah Hati
+              </h2>
+              <p style="font-size:1.02rem; color:#334155; line-height:1.7; margin-bottom:14px;">
+                <strong>Toyland.id</strong> hadir sebagai toko mainan yang menyediakan berbagai pilihan produk untuk menemani anak bermain, belajar, dan berkreasi. Kami percaya bahwa masa kecil adalah periode emas yang tak ternilai, di mana proses belajar terbaik terjadi melalui permainan yang menyenangkan.
+              </p>
+              <p style="font-size:0.95rem; color:var(--color-text-muted); line-height:1.6; margin-bottom:22px;">
+                Mengusung konsep bisnis terpadu: <strong>Retail + Grosir + Reseller</strong>, Toyland.id melayani pembelian satuan langsung untuk keluarga, maupun pengadaan dalam partai besar untuk sekolah PAUD, TK, dan mitra reseller di berbagai kota Indonesia.
+              </p>
+
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; background:#F8FAFC; padding:18px; border-radius:16px; border:1px solid #E2E8F0;">
+                <div><div style="font-size:0.75rem; color:#64748B; font-weight:700;">NAMA BISNIS</div><strong style="font-size:1.05rem;">Toyland.id</strong></div>
+                <div><div style="font-size:0.75rem; color:#64748B; font-weight:700;">TAGLINE</div><strong style="font-size:1.05rem; color:var(--color-primary-blue);">"Play. Learn. Grow."</strong></div>
+                <div><div style="font-size:0.75rem; color:#64748B; font-weight:700;">KONSEP BISNIS</div><strong style="font-size:0.95rem;">Retail + Grosir + Reseller</strong></div>
+                <div><div style="font-size:0.75rem; color:#64748B; font-weight:700;">TARGET USIA</div><strong style="font-size:0.95rem;">2 – 12 Tahun</strong></div>
+              </div>
+            </div>
+            <div style="border-radius:22px; overflow:hidden; box-shadow:var(--shadow-md); border:4px solid #FFF;">
+              <img src="images/store-concept.jpg" alt="Konsep Toko Toyland.id" style="width:100%; height:380px; object-fit:cover;" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visi & Misi -->
+      <section class="section-spacing" style="background:#F8FAFC; border-top:1px solid #E2E8F0; border-bottom:1px solid #E2E8F0;">
+        <div class="container">
+          <div style="display:grid; grid-template-columns:1fr 1.3fr; gap:36px;">
+            <div style="background:#FFF; padding:32px; border-radius:20px; border:2px solid #BAE6FD; box-shadow:var(--shadow-xs);">
+              <div style="width:52px; height:52px; border-radius:14px; background:#EFF6FF; color:var(--color-primary-blue); display:flex; align-items:center; justify-content:center; font-size:1.7rem; margin-bottom:16px;">🔭</div>
+              <span class="badge badge-blue" style="margin-bottom:10px;">Visi Kami</span>
+              <h3 style="font-family:var(--font-family-display); font-size:1.4rem; font-weight:800; margin-bottom:12px;">Visi Toyland.id</h3>
+              <blockquote style="font-size:1.1rem; color:#1E40AF; font-style:italic; line-height:1.6; border-left:4px solid var(--color-primary-blue); padding-left:14px;">
+                "Menjadi brand retail mainan yang terpercaya dan mudah diakses oleh keluarga Indonesia."
+              </blockquote>
+            </div>
+
+            <div style="background:#FFF; padding:32px; border-radius:20px; border:2px solid #FDE68A; box-shadow:var(--shadow-xs);">
+              <div style="width:52px; height:52px; border-radius:14px; background:#FFFBEB; color:#B45309; display:flex; align-items:center; justify-content:center; font-size:1.7rem; margin-bottom:16px;">🎯</div>
+              <span class="badge badge-yellow" style="margin-bottom:10px;">5 Misi Strategis</span>
+              <h3 style="font-family:var(--font-family-display); font-size:1.4rem; font-weight:800; margin-bottom:14px;">Misi Toyland.id</h3>
+              <ol style="display:flex; flex-direction:column; gap:10px;">
+                <li style="display:flex; gap:10px; font-size:0.92rem;"><strong style="color:var(--color-primary-blue);">1.</strong> Menyediakan pilihan mainan yang beragam.</li>
+                <li style="display:flex; gap:10px; font-size:0.92rem;"><strong style="color:var(--color-primary-blue);">2.</strong> Memberikan pengalaman belanja yang mudah.</li>
+                <li style="display:flex; gap:10px; font-size:0.92rem;"><strong style="color:var(--color-primary-blue);">3.</strong> Mengembangkan pemasaran melalui kanal digital.</li>
+                <li style="display:flex; gap:10px; font-size:0.92rem;"><strong style="color:var(--color-primary-blue);">4.</strong> Membuka peluang usaha melalui grosir dan reseller.</li>
+                <li style="display:flex; gap:10px; font-size:0.92rem;"><strong style="color:var(--color-primary-blue);">5.</strong> Mendukung aktivitas bermain dan kreativitas anak.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tahapan Perkembangan Bisnis -->
+      <section class="section-spacing text-center">
+        <div class="container">
+          <span class="section-tag green">Transformasi Bisnis</span>
+          <h2 class="section-title">Tahapan Perkembangan Bisnis</h2>
+          <p class="section-subtitle">Visual perkembangan bisnis Toyland.id menuju brand mainan retail terdepan:</p>
+          <div style="display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:12px; margin-top:36px;">
+            <div style="background:#FFF; border:1px solid #E2E8F0; border-radius:16px; padding:18px 24px; min-width:160px; box-shadow:var(--shadow-xs);">
+              <div style="font-size:1.8rem; margin-bottom:6px;">🏷️</div><strong>1. Brand</strong><div style="font-size:0.75rem; color:#64748B;">Identitas & Nilai</div>
+            </div>
+            <span style="font-size:1.5rem; color:var(--color-primary-yellow); font-weight:bold;">➔</span>
+            <div style="background:#FFF; border:1px solid #E2E8F0; border-radius:16px; padding:18px 24px; min-width:160px; box-shadow:var(--shadow-xs);">
+              <div style="font-size:1.8rem; margin-bottom:6px;">💻</div><strong>2. Digital</strong><div style="font-size:0.75rem; color:#64748B;">Website & Sosmed</div>
+            </div>
+            <span style="font-size:1.5rem; color:var(--color-primary-yellow); font-weight:bold;">➔</span>
+            <div style="background:#FFF; border:1px solid #E2E8F0; border-radius:16px; padding:18px 24px; min-width:160px; box-shadow:var(--shadow-xs);">
+              <div style="font-size:1.8rem; margin-bottom:6px;">🛍️</div><strong>3. Retail</strong><div style="font-size:0.75rem; color:#64748B;">Direct to Consumer</div>
+            </div>
+            <span style="font-size:1.5rem; color:var(--color-primary-yellow); font-weight:bold;">➔</span>
+            <div style="background:#FFF; border:1px solid #E2E8F0; border-radius:16px; padding:18px 24px; min-width:160px; box-shadow:var(--shadow-xs);">
+              <div style="font-size:1.8rem; margin-bottom:6px;">📦</div><strong>4. Grosir & Reseller</strong><div style="font-size:0.75rem; color:#64748B;">Mitra Bisnis</div>
+            </div>
+            <span style="font-size:1.5rem; color:var(--color-primary-yellow); font-weight:bold;">➔</span>
+            <div style="background:#FFF; border:1px solid #E2E8F0; border-radius:16px; padding:18px 24px; min-width:160px; box-shadow:var(--shadow-xs);">
+              <div style="font-size:1.8rem; margin-bottom:6px;">🚀</div><strong>5. Ekspansi</strong><div style="font-size:0.75rem; color:#64748B;">Toko & Multi-Cabang</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 3. KATALOG PRODUK VIEW -->
+    <div id="view-products" style="display:none; padding-bottom:75px;">
+      <section style="background:linear-gradient(180deg, #EFF6FF 0%, #FFFFFF 100%); padding:45px 0 25px; border-bottom:1px solid #E2E8F0;">
+        <div class="container text-center">
+          <span class="section-tag blue">Katalog Lengkap</span>
+          <h1 class="section-title">Koleksi Mainan Edukatif Toyland.id</h1>
+          <p class="section-subtitle">Pilihan mainan edukasi bermutu tinggi untuk melatih kognitif, motorik halus, dan kreativitas buah hati. Rentang harga Rp15.000 – Rp300.000.</p>
+        </div>
+      </section>
+
+      <section class="container" style="margin-top:32px;">
+        <!-- Top Search & Sort Bar -->
+        <div style="display:grid; grid-template-columns:1.2fr 0.8fr; gap:16px; margin-bottom:24px; align-items:center;">
+          <div style="position:relative;">
+            <span style="position:absolute; left:16px; top:50%; transform:translateY(-50%); font-size:1.1rem; color:#94A3B8;">🔍</span>
+            <input type="text" id="product-search-input" class="form-input" style="padding-left:46px; border-radius:999px;" placeholder="Cari mainan (contoh: Puzzle, Blocks, Flash Card)..." oninput="applyFilters()" />
+          </div>
+          <div style="display:flex; align-items:center; justify-content:flex-end; gap:10px;">
+            <label style="font-size:0.86rem; font-weight:700; color:var(--color-text-muted); white-space:nowrap;">Urutkan:</label>
+            <select id="product-sort-select" class="form-select" style="width:auto; border-radius:999px; padding:8px 18px;" onchange="applyFilters()">
+              <option value="bestSeller">Paling Populer (Best Seller)</option>
+              <option value="priceLow">Harga Terendah (Termurah)</option>
+              <option value="priceHigh">Harga Tertinggi (Termahal)</option>
+              <option value="newest">Produk Terbaru</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Sidebar Filter + Product Cards Grid -->
+        <div style="display:grid; grid-template-columns:260px 1fr; gap:30px; align-items:start;">
+          <!-- Filter Sidebar -->
+          <aside style="background:#FFF; border-radius:20px; border:1px solid #E2E8F0; padding:22px; box-shadow:var(--shadow-xs);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; padding-bottom:10px; border-bottom:1px solid #E2E8F0;">
+              <h3 style="font-family:var(--font-family-display); font-size:1.05rem; font-weight:800;">Filter Mainan</h3>
+              <button onclick="resetFilters()" style="font-size:0.8rem; color:var(--color-primary-blue); font-weight:700;">Reset</button>
+            </div>
+
+            <!-- Filter Kategori -->
+            <div style="margin-bottom:22px;">
+              <h4 style="font-size:0.86rem; font-weight:800; color:#1E293B; margin-bottom:8px; text-transform:uppercase;">Kategori</h4>
+              <div id="category-filter-list" style="display:flex; flex-direction:column; gap:4px;"></div>
+            </div>
+
+            <!-- Filter Usia -->
+            <div style="margin-bottom:22px;">
+              <h4 style="font-size:0.86rem; font-weight:800; color:#1E293B; margin-bottom:8px; text-transform:uppercase;">Usia Anak</h4>
+              <div id="age-filter-list" style="display:flex; flex-direction:column; gap:4px;"></div>
+            </div>
+
+            <!-- Filter Rentang Harga -->
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                <h4 style="font-size:0.86rem; font-weight:800; color:#1E293B; text-transform:uppercase;">Batas Harga</h4>
+                <span id="price-slider-display" style="font-size:0.85rem; font-weight:800; color:var(--color-primary-blue);">Rp300.000</span>
+              </div>
+              <input type="range" id="price-slider" min="25000" max="300000" step="10000" value="300000" style="width:100%; accent-color:var(--color-primary-blue); cursor:pointer;" oninput="updatePriceSlider(this.value)" />
+              <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:#94A3B8; margin-top:4px;">
+                <span>Rp25.000</span><span>Rp300.000</span>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Main Grid -->
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+              <div style="font-size:0.92rem; color:var(--color-text-muted);">
+                Menampilkan <strong id="product-count-display">0</strong> mainan edukatif
+              </div>
+            </div>
+            <div class="product-grid" id="catalog-products-grid" style="margin-top:0;"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 4. PROMO VIEW -->
+    <div id="view-promo" style="display:none; padding-bottom:75px;">
+      <section style="background:linear-gradient(135deg, #1E40AF 0%, #2563EB 50%, #0284C7 100%); color:#FFF; padding:50px 0 35px;">
+        <div class="container text-center">
+          <span class="badge badge-yellow" style="margin-bottom:10px;">🎉 Festival Promo & Paket Hemat</span>
+          <h1 class="section-title" style="color:#FFF;">Promo Spesial & Paket Belajar Ceria</h1>
+          <p class="section-subtitle" style="color:#E0F2FE;">Belanja mainan edukasi lebih hemat dengan diskon hingga 30%, paket bundling lengkap, dan voucher spesial.</p>
+        </div>
+      </section>
+
+      <div class="container" style="margin-top:20px;">
+        <div class="academic-notice">
+          <span>📌</span>
+          <div><strong>Catatan Simulasi Digital Marketing:</strong> Seluruh promo, diskon bundling, dan flash sale di halaman ini dirancang sebagai contoh simulasi strategi promosi tugas mata kuliah Digital Marketing.</div>
+        </div>
+      </div>
+
+      <!-- Flash sale banner -->
+      <section class="container" style="margin-top:28px;">
+        <div style="background:#FEF2F2; border:2px solid #FCA5A5; border-radius:24px; padding:24px 32px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+          <div style="display:flex; align-items:center; gap:14px;">
+            <span style="font-size:2.5rem;">⚡</span>
+            <div>
+              <span class="badge badge-red" style="margin-bottom:4px;">FLASH SALE SPESIAL</span>
+              <h3 style="font-family:var(--font-family-display); font-size:1.3rem; font-weight:800; color:#991B1B;">Diskon Kilat s/d 30% untuk Mainan Favorit</h3>
+            </div>
+          </div>
+          <button class="btn btn-orange btn-lg" onclick="switchPage('products')">Serbu Flash Sale ⚡</button>
+        </div>
+      </section>
+
+      <!-- Bundling Packages -->
+      <section class="section-spacing">
+        <div class="container">
+          <div class="text-center" style="margin-bottom:36px;">
+            <span class="section-tag yellow">Paket Hemat Pilihan</span>
+            <h2 class="section-title">Paket Bundling Seru Anak</h2>
+            <p class="section-subtitle">Kombinasi mainan terbaik yang dikurasi untuk menstimulasi berbagai aspek kecerdasan anak sekaligus.</p>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:26px;" id="promo-bundles-grid"></div>
+        </div>
+      </section>
+
+      <!-- Lead Magnet Voucher -->
+      <section class="container" style="margin-top:20px;">
+        <div style="background:linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%); border:2px dashed #F59E0B; border-radius:24px; padding:36px; text-align:center;">
+          <span style="font-size:2.4rem; display:block; margin-bottom:8px;">🎟️</span>
+          <h3 style="font-family:var(--font-family-display); font-size:1.5rem; font-weight:800; color:#78350F; margin-bottom:6px;">Klaim Voucher Diskon Rp20.000 untuk Pembelian Pertama!</h3>
+          <p style="color:#92400E; font-size:0.92rem; margin-bottom:16px;">Gunakan kode voucher saat konfirmasi pesanan ke WhatsApp resmi Toyland.id:</p>
+          <div style="display:inline-flex; align-items:center; gap:12px; background:#FFF; padding:10px 24px; border-radius:999px; border:2px solid #F59E0B; font-weight:900; font-size:1.25rem; color:#B45309; letter-spacing:2px;">
+            TOYLANDCERIA
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 5. GROSIR & RESELLER VIEW -->
+    <div id="view-reseller" style="display:none; padding-bottom:75px;">
+      <section style="background:linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 100%); padding:50px 0 35px; border-bottom:1px solid #E2E8F0;">
+        <div class="container text-center">
+          <span class="section-tag yellow">Peluang Usaha & Kemitraan</span>
+          <h1 class="section-title">Bangun Bisnis Mainan Bersama Toyland.id</h1>
+          <p class="section-subtitle">Kembangkan penghasilan mandiri dengan produk mainan edukatif yang selalu dicari keluarga, didukung margin keuntungan menarik dan foto katalog gratis.</p>
+        </div>
+      </section>
+
+      <section class="section-spacing">
+        <div class="container">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px;">
+            <!-- Grosir -->
+            <div style="background:#FFF; border-radius:24px; padding:34px; border:2px solid #BAE6FD; box-shadow:var(--shadow-sm);">
+              <div style="width:56px; height:56px; border-radius:16px; background:#EFF6FF; color:var(--color-primary-blue); display:flex; align-items:center; justify-content:center; font-size:1.8rem; margin-bottom:16px;">🏬</div>
+              <span class="badge badge-blue" style="margin-bottom:10px;">Layanan Grosir Toko & Sekolah</span>
+              <h3 style="font-family:var(--font-family-display); font-size:1.45rem; font-weight:800; margin-bottom:10px;">Grosir Skala Besar</h3>
+              <p style="color:var(--color-text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:18px;">Untuk toko mainan fisik, distributor lokal, koperasi, dan pengadaan sekolah PAUD/TK dalam jumlah besar.</p>
+              <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:22px; font-size:0.92rem;">
+                <div><span style="color:#10B981; font-weight:bold;">✓</span> <strong>Harga Khusus Grosir Bertingkat:</strong> Makin banyak pesan, makin hemat.</div>
+                <div><span style="color:#10B981; font-weight:bold;">✓</span> <strong>Pembelian Jumlah Banyak:</strong> Fleksibilitas mix produk ratusan SKU.</div>
+                <div><span style="color:#10B981; font-weight:bold;">✓</span> <strong>Dukungan Ekspedisi Kargo Murah:</strong> Indah Cargo, J&T Cargo, Dakota.</div>
+              </div>
+              <a href="#form-reseller-box" class="btn btn-secondary" style="width:100%;">Minta Price List Grosir 📦</a>
+            </div>
+
+            <!-- Reseller -->
+            <div style="background:#FFF; border-radius:24px; padding:34px; border:2px solid #FDE68A; box-shadow:var(--shadow-sm);">
+              <div style="width:56px; height:56px; border-radius:16px; background:#FFFBEB; color:#B45309; display:flex; align-items:center; justify-content:center; font-size:1.8rem; margin-bottom:16px;">📱</div>
+              <span class="badge badge-yellow" style="margin-bottom:10px;">Program Reseller Mandiri</span>
+              <h3 style="font-family:var(--font-family-display); font-size:1.45rem; font-weight:800; margin-bottom:10px;">Reseller Online & Dropship</h3>
+              <p style="color:var(--color-text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:18px;">Cocok untuk ibu rumah tangga, mahasiswa, dan pemula yang ingin berjualan mainan tanpa repot sewa tempat.</p>
+              <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:22px; font-size:0.92rem;">
+                <div><span style="color:#10B981; font-weight:bold;">✓</span> <strong>Bisa Dijual Melalui Marketplace:</strong> Shopee, Tokopedia, TikTok Shop.</div>
+                <div><span style="color:#10B981; font-weight:bold;">✓</span> <strong>Bisa Dijual Melalui Social Media:</strong> Status WhatsApp & Instagram.</div>
+                <div><span style="color:#10B981; font-weight:bold;">✓</span> <strong>Katalog & Media Promosi Gratis:</strong> Foto produk HD siap posting.</div>
+                <div><span style="color:#10B981; font-weight:bold;">✓</span> <strong>Dukungan Pemesanan Cepat:</strong> Proses kirim nama tokomu (dropship).</div>
+              </div>
+              <a href="#form-reseller-box" class="btn btn-primary" style="width:100%;">Daftar Jadi Reseller 💼</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form Pendaftaran Reseller (Direct WhatsApp) -->
+      <section class="container" id="form-reseller-box" style="max-width:760px; margin-top:20px;">
+        <div style="background:#FFF; border-radius:24px; border:2px solid #E2E8F0; padding:36px; box-shadow:var(--shadow-md);">
+          <div class="text-center" style="margin-bottom:24px;">
+            <span class="badge badge-yellow" style="margin-bottom:8px;">Formulir Pendaftaran</span>
+            <h2 style="font-family:var(--font-family-display); font-size:1.7rem; font-weight:800;">Daftar Grosir & Reseller</h2>
+            <p style="font-size:0.9rem; color:var(--color-text-muted);">Lengkapi data di bawah ini, pesanan Anda akan langsung dirangkum dan diteruskan ke WhatsApp resmi kami.</p>
+          </div>
+          <form onsubmit="handleResellerFormSubmit(event)">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+              <div class="form-group">
+                <label class="form-label">Nama Lengkap *</label>
+                <input type="text" id="reseller-name" required class="form-input" placeholder="Contoh: Hendra Pratama" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Nomor WhatsApp Aktif *</label>
+                <input type="tel" id="reseller-phone" required class="form-input" placeholder="Contoh: 081298765432" />
+              </div>
+            </div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+              <div class="form-group">
+                <label class="form-label">Kota / Domisili *</label>
+                <input type="text" id="reseller-city" required class="form-input" placeholder="Contoh: Bandung / Surabaya" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Jenis Bisnis *</label>
+                <select id="reseller-type" class="form-select">
+                  <option value="Reseller Online (Media Sosial / Marketplace)">Reseller Online (Media Sosial / Marketplace)</option>
+                  <option value="Toko Mainan Fisik / Toko Buku">Toko Mainan Fisik / Toko Buku</option>
+                  <option value="Lembaga PAUD / TK / Kursus Anak">Lembaga PAUD / TK / Kursus Anak</option>
+                  <option value="Distributor Grosir Daerah">Distributor Grosir Daerah</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Estimasi Kebutuhan / Volume Pembelian</label>
+              <select id="reseller-qty" class="form-select">
+                <option value="Paket Pemula (10 - 25 pcs)">Paket Pemula (10 – 25 pcs)</option>
+                <option value="Paket Menengah (26 - 50 pcs)">Paket Menengah (26 – 50 pcs)</option>
+                <option value="Paket Grosir Besar (50 - 100+ pcs)">Paket Grosir Besar (50 – 100+ pcs)</option>
+                <option value="Dropship Satuan Sesuai Pesanan">Dropship Satuan Sesuai Pesanan</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Pesan Tambahan</label>
+              <textarea id="reseller-notes" rows="3" class="form-textarea" placeholder="Tuliskan pertanyaan Anda..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Kirim Pendaftaran ke WhatsApp 💬</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- 6. CONTACT VIEW -->
+    <div id="view-contact" style="display:none; padding-bottom:75px;">
+      <section style="background:linear-gradient(180deg, #EFF6FF 0%, #FFFFFF 100%); padding:45px 0 25px; border-bottom:1px solid #E2E8F0;">
+        <div class="container text-center">
+          <span class="section-tag blue">Hubungi Kami</span>
+          <h1 class="section-title">Kontak & Lokasi Toyland.id</h1>
+          <p class="section-subtitle">Tim customer care Toyland.id siap menjawab kebutuhan mainan edukatif dan kemitraan bisnis Anda.</p>
+        </div>
+      </section>
+
+      <section class="section-spacing">
+        <div class="container">
+          <div style="display:grid; grid-template-columns:1fr 1.2fr; gap:36px;">
+            <!-- Official Info with Placeholders -->
+            <div>
+              <span class="badge badge-yellow" style="margin-bottom:10px;">📍 Informasi Kontak Resmi</span>
+              <h2 style="font-family:var(--font-family-display); font-size:1.7rem; font-weight:800; margin-bottom:14px;">Senang Terhubung Dengan Anda</h2>
+              <p style="color:var(--color-text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:22px;">
+                Sesuai batasan tugas akademik, informasi kontak menggunakan format placeholder standar yang mudah disesuaikan.
+              </p>
+              <div style="display:flex; flex-direction:column; gap:14px;">
+                <div style="display:flex; gap:14px; background:#FFF; padding:16px; border-radius:14px; border:1px solid #E2E8F0;">
+                  <div style="font-size:1.4rem;">💬</div>
+                  <div>
+                    <div style="font-size:0.75rem; color:#64748B; font-weight:700;">WHATSAPP RESMI</div>
+                    <strong style="color:#0F172A;">08153894537</strong>
+                    <div style="font-size:0.75rem; color:#10B981; margin-top:2px;">Online Setiap Hari: 08.00 - 21.00 WIB</div>
+                  </div>
+                </div>
+                <div style="display:flex; gap:14px; background:#FFF; padding:16px; border-radius:14px; border:1px solid #E2E8F0;">
+                  <div style="font-size:1.4rem;">✉️</div>
+                  <div>
+                    <div style="font-size:0.75rem; color:#64748B; font-weight:700;">EMAIL BISNIS</div>
+                    <strong style="color:#0F172A;">toyland.id@gmail.com</strong>
+                    <div style="font-size:0.75rem; color:#64748B; margin-top:2px;">Respon dalam 1x24 jam kerja</div>
+                  </div>
+                </div>
+                <div style="display:flex; gap:14px; background:#FFF; padding:16px; border-radius:14px; border:1px solid #E2E8F0;">
+                  <div style="font-size:1.4rem;">🏪</div>
+                  <div>
+                    <div style="font-size:0.75rem; color:#64748B; font-weight:700;">ALAMAT TOKO FISIK</div>
+                    <strong style="color:#0F172A;">Jl.Kasuari XV, Cikarang Utara, Bekasi, Jawa Barat</strong>
+                    <div style="font-size:0.75rem; color:#64748B; margin-top:2px;">Showroom mainan & pick-up offline point</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form Pesan -->
+            <div style="background:#FFF; border-radius:24px; border:1px solid #E2E8F0; padding:32px; box-shadow:var(--shadow-sm);">
+              <h3 style="font-family:var(--font-family-display); font-size:1.35rem; font-weight:800; margin-bottom:6px;">Kirim Pesan Langsung</h3>
+              <p style="font-size:0.88rem; color:var(--color-text-muted); margin-bottom:18px;">Punya pertanyaan spesifik seputar rekomendasi usia anak atau cek stok?</p>
+              <form onsubmit="handleContactFormSubmit(event)">
+                <div class="form-group">
+                  <label class="form-label">Nama Anda *</label>
+                  <input type="text" id="contact-name" required class="form-input" placeholder="Nama Anda" />
+                </div>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+                  <div class="form-group">
+                    <label class="form-label">Nomor WhatsApp *</label>
+                    <input type="tel" id="contact-phone" required class="form-input" placeholder="0812xxxxxxxx" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Email (Opsional)</label>
+                    <input type="email" id="contact-email" class="form-input" placeholder="email@anda.com" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Isi Pesan *</label>
+                  <textarea id="contact-message" required rows="3" class="form-textarea" placeholder="Tuliskan pesan Anda..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Kirim Pesan via WhatsApp 💬</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- =====================================================================
+       PRODUCT DETAIL MODAL
+       ===================================================================== -->
+  <div class="modal-overlay" id="product-detail-modal" onclick="closeProductDetailModal()">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeProductDetailModal()" aria-label="Tutup">✕</button>
+      <div class="modal-body" id="product-detail-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       CART DRAWER
+       ===================================================================== -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay" onclick="closeCartDrawer()"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <div style="font-family:var(--font-family-display); font-size:1.2rem; font-weight:800; display:flex; align-items:center; gap:8px;">
+        <span>🛒</span> Keranjang Belanja (<span id="cart-items-total-qty">0</span>)
+      </div>
+      <button class="modal-close-btn" style="position:static;" onclick="closeCartDrawer()" aria-label="Tutup">✕</button>
+    </div>
+    <div class="cart-items-list" id="cart-items-container"></div>
+    <div class="cart-footer" id="cart-footer-box"></div>
+  </div>
+
+  <!-- =====================================================================
+       CHECKOUT SIMULATION MODAL
+       ===================================================================== -->
+  <div class="modal-overlay" id="checkout-modal" onclick="closeCheckoutModal()">
+    <div class="modal-card" style="max-width:700px;" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeCheckoutModal()" aria-label="Tutup">✕</button>
+      <div style="padding:32px;" id="checkout-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       FLOATING WHATSAPP BUTTON & POPOVER
+       ===================================================================== -->
+  <div style="position:fixed; bottom:26px; right:26px; z-index:1200;">
+    <div id="wa-quick-popover" style="display:none; position:absolute; bottom:70px; right:0; width:300px; background:#FFF; border-radius:20px; box-shadow:var(--shadow-lg); border:1px solid #E2E8F0; padding:18px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:1.3rem;">💬</span>
+          <div><strong style="font-size:0.92rem; display:block;">Chat Toyland.id</strong><span style="font-size:0.75rem; color:#10B981;">● Online & Siap Bantu</span></div>
+        </div>
+        <button onclick="toggleWaPopover()" style="color:#94A3B8;">✕</button>
+      </div>
+      <p style="font-size:0.84rem; color:#64748B; margin-bottom:12px;">Ada yang bisa kami bantu seputar mainan edukatif atau peluang reseller?</p>
+      <div style="display:flex; flex-direction:column; gap:8px;">
+        <a href="https://wa.me/?text=Halo%20Toyland.id,%20saya%20ingin%20tanya%20produk%20mainan%20anak." target="_blank" rel="noreferrer" class="btn btn-whatsapp btn-sm" style="justify-content:flex-start;">
+          🛍️ Tanya Produk / Konsultasi Usia
+        </a>
+        <a href="https://wa.me/?text=Halo%20Toyland.id,%20saya%20ingin%20info%20kemitraan%20Grosir%20dan%20Reseller." target="_blank" rel="noreferrer" class="btn btn-outline-blue btn-sm" style="justify-content:flex-start;">
+          📦 Info Grosir & Reseller
+        </a>
+      </div>
+    </div>
+    <div class="floating-wa-btn" onclick="toggleWaPopover()" title="Hubungi WhatsApp">
+      <span class="wa-pulse"></span>
+      <span>💬</span>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" style="display:none;" class="toast-notice"></div>
+
+  <!-- =====================================================================
+       FOOTER
+       ===================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div>
+          <h3>Toyland.id</h3>
+          <div style="color:#FCD34D; font-weight:700; font-size:0.85rem; letter-spacing:1px; margin-bottom:12px;">PLAY • LEARN • GROW</div>
+          <p style="font-size:0.88rem; line-height:1.6; margin-bottom:18px;">
+            Pusat retail mainan anak edukatif, berkualitas, dan aman untuk menemani tumbuh kembang buah hati secara optimal. Melayani pembelian retail, grosir, dan kemitraan reseller se-Indonesia.
+          </p>
+          <div style="margin-top:14px;">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" class="social-btn" title="Instagram">📸</a>
+            <a href="https://tiktok.com" target="_blank" rel="noreferrer" class="social-btn" title="TikTok">🎵</a>
+            <a href="https://shopee.co.id" target="_blank" rel="noreferrer" class="social-btn" title="Shopee">🛍️</a>
+            <a href="https://wa.me/?text=Halo%20Toyland.id" target="_blank" rel="noreferrer" class="social-btn" title="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <!-- Menu Navigasi -->
+        <div>
+          <h4 class="footer-title">Menu Navigasi</h4>
+          <button class="footer-link" onclick="switchPage('home')">Home</button>
+          <button class="footer-link" onclick="switchPage('about')">Tentang Kami</button>
+          <button class="footer-link" onclick="switchPage('products')">Katalog Produk</button>
+          <button class="footer-link" onclick="switchPage('promo')">Promo & Bundling</button>
+          <button class="footer-link" onclick="switchPage('reseller')">Grosir & Reseller</button>
+          <button class="footer-link" onclick="switchPage('contact')">Kontak & Lokasi</button>
+        </div>
+
+        <!-- Kategori Mainan -->
+        <div>
+          <h4 class="footer-title">Kategori</h4>
+          <button class="footer-link" onclick="filterByCategoryAndSwitch('edukatif')">Mainan Edukatif</button>
+          <button class="footer-link" onclick="filterByCategoryAndSwitch('puzzle')">Puzzle Kayu</button>
+          <button class="footer-link" onclick="filterByCategoryAndSwitch('blocks')">Building Blocks</button>
+          <button class="footer-link" onclick="filterByCategoryAndSwitch('kreatif')">Mainan Kreatif</button>
+          <button class="footer-link" onclick="filterByCategoryAndSwitch('boneka')">Boneka & Figure</button>
+          <button class="footer-link" onclick="filterByCategoryAndSwitch('diecast')">Diecast Mobil</button>
+        </div>
+
+        <!-- Informasi Kontak -->
+        <div>
+          <h4 class="footer-title">Kontak Resmi</h4>
+          <div style="display:flex; flex-direction:column; gap:10px; font-size:0.86rem;">
+            <div>WhatsApp: <strong style="color:#FFF;">08153894537</strong></div>
+            <div>Email: <strong style="color:#FFF;">toyland.id@gmail.com</strong></div>
+            <div>Alamat: <strong style="color:#FFF;">Jl.Kasuari XV, Cikarang Utara,Bekasi, Indonesia</strong></div>
+            <div style="background:rgba(255,255,255,0.05); padding:10px; border-radius:8px; font-size:0.75rem; color:#94A3B8; margin-top:4px;">
+                          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 <strong>Toyland.id</strong>. All Rights Reserved. Tagline: <em>"Play. Learn. Grow."</em></div>
+        <div>Target Bisnis: <strong>Rp1 Miliar / Bulan (12 Bulan)</strong> • Digital Marketing Project</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       PURE VANILLA JAVASCRIPT LOGIC
+       ===================================================================== -->
+  <script>
+    /* --- DATA & CONFIGURATION --- */
+    const BUSINESS_CONFIG = {
+      name: 'Toyland.id',
+      tagline: 'Play. Learn. Grow.',
+      whatsappPlaceholder: '[NOMOR_WHATSAPP_TOYLAND]',
+      emailPlaceholder: '[EMAIL TOYLAND]',
+      addressPlaceholder: '[ALAMAT TOKO]'
+    };
+
+    const CATEGORIES = [
+      { id: 'all', name: 'Semua Kategori', icon: '✨', count: 16 },
+      { id: 'edukatif', name: 'Mainan Edukatif', icon: '🧠', count: 4 },
+      { id: 'puzzle', name: 'Puzzle', icon: '🧩', count: 3 },
+      { id: 'blocks', name: 'Building Blocks', icon: '🧱', count: 3 },
+      { id: 'kreatif', name: 'Mainan Kreatif', icon: '🎨', count: 3 },
+      { id: 'boneka', name: 'Boneka & Figure', icon: '🧸', count: 2 },
+      { id: 'diecast', name: 'Diecast & Kendaraan', icon: '🏎️', count: 2 },
+      { id: 'outdoor', name: 'Outdoor & Aktivitas', icon: '⚽', count: 2 },
+      { id: 'aksesori', name: 'Aksesori Anak', icon: '🎒', count: 2 }
+    ];
+
+    const AGE_RANGES = [
+      { id: 'all', label: 'Semua Usia' },
+      { id: '2-3', label: '2–3 Tahun' },
+      { id: '4-5', label: '4–5 Tahun' },
+      { id: '6-8', label: '6–8 Tahun' },
+      { id: '9-12', label: '9–12 Tahun' }
+    ];
+
+    const PRODUCTS = [
+      {
+        id: 'prod-01',
+        name: 'Puzzle Kayu Hewan Safari',
+        category: 'puzzle',
+        categoryName: 'Puzzle',
+        price: 45000,
+        originalPrice: 60000,
+        rating: 4.9,
+        reviewsCount: 84,
+        ageRange: '2-3',
+        ageLabel: '2–3 Tahun',
+        badge: 'Best Seller',
+        stock: 45,
+        isBestSeller: true,
+        isPromo: true,
+        image: 'images/prod-wooden-puzzle.jpg',
+        description: 'Puzzle kayu edukatif bergambar aneka satwa rimba dengan knob tebal ramah genggaman balita. Cat berbahan waterbased aman tanpa zat kimia berbahaya dengan sudut dibulatkan halus.',
+        benefits: ['Melatih koordinasi mata dan tangan (hand-eye)', 'Mengenalkan ragam satwa dan warna dasar', 'Mengasah fokus dan kesabaran si kecil'],
+        material: 'Kayu Pinus Halus SNI + Cat Non-Toxic Waterbased',
+        size: '30 cm x 22 cm x 1.2 cm',
+        wholesalePrice: 35000,
+        wholesaleMinQty: 6
+      },
+      {
+        id: 'prod-02',
+        name: 'Building Blocks 100 pcs Classic Wood',
+        category: 'blocks',
+        categoryName: 'Building Blocks',
+        price: 125000,
+        originalPrice: 155000,
+        rating: 5.0,
+        reviewsCount: 112,
+        ageRange: '4-5',
+        ageLabel: '4–5 Tahun',
+        badge: 'Favorit Pilihan',
+        stock: 30,
+        isBestSeller: true,
+        isPromo: true,
+        image: 'images/prod-building-blocks.jpg',
+        description: 'Set balok susun kayu 100 keping ragam bentuk geometris: silinder, kubus, segitiga, jembatan, dan lengkungan. Anak bebas berimajinasi merakit istana dan miniatur kota.',
+        benefits: ['Menstimulasi kecerdasan spasial dan arsitektur', 'Mengembangkan pemahaman konsep gravitasi & keseimbangan', 'Aktivitas bermain interaktif bersama keluarga'],
+        material: 'Solid Wood Beechwood Halus SNI',
+        size: 'Ember Tabung: 24 x 20 cm (Isi 100 Pcs)',
+        wholesalePrice: 98000,
+        wholesaleMinQty: 5
+      },
+      {
+        id: 'prod-03',
+        name: 'Magnetic Tiles & Blocks 3D (64 Pcs)',
+        category: 'blocks',
+        categoryName: 'Building Blocks',
+        price: 165000,
+        originalPrice: 210000,
+        rating: 4.9,
+        reviewsCount: 96,
+        ageRange: '6-8',
+        ageLabel: '6–8 Tahun',
+        badge: 'Best Seller',
+        stock: 22,
+        isBestSeller: true,
+        isPromo: false,
+        image: 'images/hero-banner.jpg',
+        description: 'Mainan konstruksi magnetik transparan warna-warni 3D. Menggunakan magnet neodinium berdaya rekat kuat untuk merakit kastil, kubus, hingga mobil magnetik.',
+        benefits: ['Eksplorasi konsep sains STEAM sejak dini', 'Memperkuat imajinasi logika bangun ruang', 'Menjauhkan anak dari kecanduan layar gadget'],
+        material: 'Plastik ABS Food-Grade & Magnet Neodinium Tertutup',
+        size: 'Kotak: 28 x 20 x 7 cm',
+        wholesalePrice: 135000,
+        wholesaleMinQty: 4
+      },
+      {
+        id: 'prod-04',
+        name: 'Busy Book Anak Interaktif Montessori',
+        category: 'edukatif',
+        categoryName: 'Mainan Edukatif',
+        price: 58000,
+        originalPrice: 75000,
+        rating: 4.8,
+        reviewsCount: 73,
+        ageRange: '2-3',
+        ageLabel: '2–3 Tahun',
+        badge: 'Montessori',
+        stock: 40,
+        isBestSeller: true,
+        isPromo: true,
+        image: 'images/hero-banner.jpg',
+        description: 'Buku flanel tebal melatih kemandirian anak: memasang kancing, tali sepatu, jam analog, resleting, dan velcro bentuk hewan. Travel friendly saat bepergian.',
+        benefits: ['Melatih motorik halus dan life-skills dasar', 'Praktis dibawa di mobil maupun pesawat', 'Awet, tidak sobek, dan dapat dicuci aman'],
+        material: 'Kain Flanel Tebal & Felt Jahitan Dobel',
+        size: '22 cm x 20 cm x 4 cm',
+        wholesalePrice: 44000,
+        wholesaleMinQty: 6
+      },
+      {
+        id: 'prod-05',
+        name: 'DIY Coloring & Art Painting Kit',
+        category: 'kreatif',
+        categoryName: 'Mainan Kreatif',
+        price: 35000,
+        originalPrice: 45000,
+        rating: 4.7,
+        reviewsCount: 52,
+        ageRange: '4-5',
+        ageLabel: '4–5 Tahun',
+        badge: 'Paket Hemat',
+        stock: 65,
+        isBestSeller: false,
+        isPromo: true,
+        image: 'images/promo-bundle.jpg',
+        description: 'Set lengkap melukis anak: kuas presisi, palet cat air washable (mudah dibersihkan dengan air), krayon ergonomis, dan lembaran kanvas bergambar seru.',
+        benefits: ['Mengekspresikan kreativitas visual anak', 'Mengenal gradasi warna dan eksplorasi seni', 'Cat mudah dibilas tanpa noda di baju'],
+        material: 'Cat Washable Water-based Ramah Lingkungan',
+        size: 'Kotak: 25 cm x 18 cm x 3 cm',
+        wholesalePrice: 26000,
+        wholesaleMinQty: 10
+      },
+      {
+        id: 'prod-06',
+        name: 'Mini Kitchen Chef Set Wooden Roleplay',
+        category: 'kreatif',
+        categoryName: 'Mainan Kreatif',
+        price: 185000,
+        originalPrice: 235000,
+        rating: 4.9,
+        reviewsCount: 68,
+        ageRange: '4-5',
+        ageLabel: '4–5 Tahun',
+        badge: 'Best Seller',
+        stock: 18,
+        isBestSeller: true,
+        isPromo: true,
+        image: 'images/store-concept.jpg',
+        description: 'Dapur kayu mini dengan kompor putar berbunyi klik, wajan mini, spatula, dan sayuran potong berperekat velcro yang mengeluarkan suara potong renyah.',
+        benefits: ['Meningkatkan imajinasi role-play koki cilik', 'Mengasah kemampuan sosial dan komunikasi', 'Mengenalkan ragam nutrisi makanan sehat'],
+        material: 'Kayu Pinus Halus Non-Toxic SNI',
+        size: '35 cm x 26 cm x 15 cm',
+        wholesalePrice: 148000,
+        wholesaleMinQty: 3
+      },
+      {
+        id: 'prod-07',
+        name: 'Educational Flash Card Dwibahasa (50 Kartu)',
+        category: 'edukatif',
+        categoryName: 'Mainan Edukatif',
+        price: 25000,
+        originalPrice: 35000,
+        rating: 4.9,
+        reviewsCount: 140,
+        ageRange: '2-3',
+        ageLabel: '2–3 Tahun',
+        badge: 'Best Seller',
+        stock: 80,
+        isBestSeller: true,
+        isPromo: true,
+        image: 'images/hero-banner.jpg',
+        description: 'Flash card bilingual (Indonesia - Inggris) ilustrasi ceria. Materi alfabet, angka, hewan, dan objek harian dengan laminasi tahan air dan sudut rounded.',
+        benefits: ['Menstimulasi kosakata dan kemampuan bicara', 'Mempercepat daya ingat visual asosiatif', 'Media belajar interaktif anak dan orang tua'],
+        material: 'Art Carton 360 gsm Laminasi Glossy',
+        size: 'Kartu: 9 cm x 12 cm (Isi 50 Kartu + Ring)',
+        wholesalePrice: 18000,
+        wholesaleMinQty: 10
+      },
+      {
+        id: 'prod-08',
+        name: 'Wooden Number & Shape Counting Puzzle',
+        category: 'puzzle',
+        categoryName: 'Puzzle',
+        price: 42000,
+        originalPrice: 55000,
+        rating: 4.8,
+        reviewsCount: 65,
+        ageRange: '4-5',
+        ageLabel: '4–5 Tahun',
+        badge: 'Edukasi Awal',
+        stock: 35,
+        isBestSeller: false,
+        isPromo: false,
+        image: 'images/prod-wooden-puzzle.jpg',
+        description: 'Papan hitung kayu matematika anak untuk belajar angka 1–10, bentuk geometri, dan cincin susun bertingkat untuk menghitung jumlah kuantitas objek.',
+        benefits: ['Mengenalkan matematika dasar & kuantitas', 'Melatih logika pencocokan geometri', 'Mengasah fokus dan kesabaran visual'],
+        material: 'Kayu Alami dengan Cat Waterbased SNI',
+        size: '40 cm x 15 cm x 7 cm',
+        wholesalePrice: 32000,
+        wholesaleMinQty: 6
+      },
+      {
+        id: 'prod-09',
+        name: 'Little Doctor Medical Playset Koper',
+        category: 'kreatif',
+        categoryName: 'Mainan Kreatif',
+        price: 75000,
+        originalPrice: 95000,
+        rating: 4.8,
+        reviewsCount: 59,
+        ageRange: '4-5',
+        ageLabel: '4–5 Tahun',
+        badge: 'Favorit Anak',
+        stock: 28,
+        isBestSeller: true,
+        isPromo: true,
+        image: 'images/store-concept.jpg',
+        description: 'Set dokter cilik dalam koper praktis. Dilengkapi stetoskop detak realistis, termometer lampu, jarum suntik pegas, kacamata, dan kartu resep pasien.',
+        benefits: ['Mengurangi rasa takut anak saat ke dokter', 'Menumbuhkan rasa empati dan kepedulian', 'Mendorong komunikasi role-play menyenangkan'],
+        material: 'Plastik ABS Tebal SNI',
+        size: 'Koper: 26 cm x 22 cm x 10 cm',
+        wholesalePrice: 58000,
+        wholesaleMinQty: 5
+      },
+      {
+        id: 'prod-10',
+        name: 'Diecast Metal Alloy Car Racing Set (6 Pcs)',
+        category: 'diecast',
+        categoryName: 'Diecast & Kendaraan',
+        price: 65000,
+        originalPrice: 85000,
+        rating: 4.9,
+        reviewsCount: 88,
+        ageRange: '6-8',
+        ageLabel: '6–8 Tahun',
+        badge: 'Koleksi Seru',
+        stock: 40,
+        isBestSeller: true,
+        isPromo: false,
+        image: 'images/hero-banner.jpg',
+        description: 'Set 6 mobil balap bodi logam alloy dengan mekanisme pull-back tarik mundur. Desain aerodinamis warna-warni yang tahan benturan dan nyaman digenggam.',
+        benefits: ['Melatih refleks motorik kasar dan ketangkasan', 'Memicu antusiasme bermain bersama teman', 'Koleksi seru dan kado ulang tahun ideal'],
+        material: 'Bodi Metal Alloy Kokoh + Chasis ABS Aman',
+        size: 'Panjang mobil: 7.5 cm (Box: 28 x 10 cm)',
+        wholesalePrice: 49000,
+        wholesaleMinQty: 6
+      },
+      {
+        id: 'prod-11',
+        name: 'Safari Wild Animal Figure Set (12 Pcs)',
+        category: 'boneka',
+        categoryName: 'Boneka & Figure',
+        price: 48000,
+        originalPrice: 62000,
+        rating: 4.7,
+        reviewsCount: 43,
+        ageRange: '2-3',
+        ageLabel: '2–3 Tahun',
+        badge: 'Edukasi Hewan',
+        stock: 50,
+        isBestSeller: false,
+        isPromo: true,
+        image: 'images/prod-wooden-puzzle.jpg',
+        description: 'Koleksi 12 miniatur satwa liar rimba (singa, jerapah, gajah, harimau, zebra, dll) dengan detail tekstur realistis dan cat tahan pudar.',
+        benefits: ['Mengenalkan keanekaragaman fauna dunia', 'Sarana mendongeng interaktif sebelum tidur', 'Aman dimainkan di dalam rumah maupun air'],
+        material: 'Karet PVC Padat Non-Toxic SNI',
+        size: 'Rata-rata 6–10 cm',
+        wholesalePrice: 36000,
+        wholesaleMinQty: 8
+      },
+      {
+        id: 'prod-12',
+        name: 'Magnetic Drawing Board Papan Ajaib',
+        category: 'kreatif',
+        categoryName: 'Mainan Kreatif',
+        price: 55000,
+        originalPrice: 70000,
+        rating: 4.8,
+        reviewsCount: 67,
+        ageRange: '2-3',
+        ageLabel: '2–3 Tahun',
+        badge: 'Tanpa Noda',
+        stock: 36,
+        isBestSeller: false,
+        isPromo: false,
+        image: 'images/promo-bundle.jpg',
+        description: 'Papan gambar magnetik 4 warna dengan pena stylus dan 3 stempel bentuk. Gambar bersih seketika hanya dengan menggeser tuas tanpa mengotori dinding.',
+        benefits: ['Mendukung bakat menggambar tanpa kotor', 'Latihan genggaman pensil persiapan sekolah', 'Hemat kertas dan ramah lingkungan'],
+        material: 'Plastik ABS Tebal + Serbuk Magnet Aman',
+        size: '30 cm x 21 cm x 3 cm',
+        wholesalePrice: 42000,
+        wholesaleMinQty: 6
+      },
+      {
+        id: 'prod-13',
+        name: 'Rainbow Stacking Rings Kayu Balita',
+        category: 'edukatif',
+        categoryName: 'Mainan Edukatif',
+        price: 32000,
+        originalPrice: 42000,
+        rating: 4.9,
+        reviewsCount: 110,
+        ageRange: '2-3',
+        ageLabel: '2–3 Tahun',
+        badge: 'Favorit Bayi',
+        stock: 55,
+        isBestSeller: true,
+        isPromo: false,
+        image: 'images/hero-banner.jpg',
+        description: 'Menara donat susun pelangi klasik dengan 7 cincin gradasi ukuran dan bola penutup. Tiang tengah fleksibel aman dimainkan balita.',
+        benefits: ['Melatih perbandingan ukuran besar-kecil', 'Menstimulasi refleks genggam dan akurasi', 'Menenangkan fokus dan konsentrasi anak'],
+        material: 'Kayu Mahoni Halus + Cat Food-Grade SNI',
+        size: 'Tinggi 21 cm, Diameter Alas 9 cm',
+        wholesalePrice: 24000,
+        wholesaleMinQty: 8
+      },
+      {
+        id: 'prod-14',
+        name: 'Kids Ultimate Art & Craft Studio (208 Pcs)',
+        category: 'kreatif',
+        categoryName: 'Mainan Kreatif',
+        price: 89000,
+        originalPrice: 120000,
+        rating: 4.9,
+        reviewsCount: 78,
+        ageRange: '6-8',
+        ageLabel: '6–8 Tahun',
+        badge: 'Paket Komplit',
+        stock: 24,
+        isBestSeller: true,
+        isPromo: true,
+        image: 'images/promo-bundle.jpg',
+        description: 'Koper seni lengkap: spidol, pensil warna, krayon lilin, oil pastel, cat air, kuas, gunting pengaman anak, dan easel lipat mini di dalamnya.',
+        benefits: ['Sarana komprehensif mengasah bakat seni', 'Melatih kerapian menyimpan peralatan sendiri', 'Pilihan hadiah paling berkesan'],
+        material: 'Koper Plastik Ergonomis + Pewarna Non-Toxic',
+        size: 'Koper: 40 cm x 30 cm x 5.5 cm',
+        wholesalePrice: 72000,
+        wholesaleMinQty: 4
+      },
+      {
+        id: 'prod-15',
+        name: 'Outdoor Soft Bowling & Toss Ball Set',
+        category: 'outdoor',
+        categoryName: 'Outdoor & Aktivitas',
+        price: 95000,
+        originalPrice: 130000,
+        rating: 4.8,
+        reviewsCount: 47,
+        ageRange: '6-8',
+        ageLabel: '6–8 Tahun',
+        badge: 'Aktivitas Fisik',
+        stock: 20,
+        isBestSeller: false,
+        isPromo: true,
+        image: 'images/store-concept.jpg',
+        description: 'Set bowling busa empuk bertema kartun dengan 6 pin busa lembut dan 2 bola bowling. Aman dimainkan di rumah tanpa risiko memecahkan barang.',
+        benefits: ['Menyalurkan energi aktif anak secara positif', 'Meningkatkan akurasi lemparan motorik kasar', 'Permainan seru akhir pekan bersama keluarga'],
+        material: 'Busa EVA High Density Super Soft Washable',
+        size: 'Tinggi Pin 19 cm, Diameter Bola 10 cm',
+        wholesalePrice: 74000,
+        wholesaleMinQty: 4
+      },
+      {
+        id: 'prod-16',
+        name: 'Educational Smart Matching Game Board',
+        category: 'edukatif',
+        categoryName: 'Mainan Edukatif',
+        price: 39000,
+        originalPrice: 50000,
+        rating: 4.8,
+        reviewsCount: 62,
+        ageRange: '4-5',
+        ageLabel: '4–5 Tahun',
+        badge: 'Logika Cilik',
+        stock: 45,
+        isBestSeller: false,
+        isPromo: false,
+        image: 'images/prod-wooden-puzzle.jpg',
+        description: 'Board game mencocokkan kata, gambar hewan, dan ejaan kosakata Inggris untuk usia prasekolah. Terdiri dari baki display, kartu tebak, dan kubus abjad.',
+        benefits: ['Membantu anak membaca dan mengeja kosakata', 'Menumbuhkan konsentrasi dan pemecahan masalah', 'Mempererat kedekatan belajar bersama orang tua'],
+        material: 'Plastik ABS Tebal & Kartu Tebal Laminasi',
+        size: '24 cm x 20 cm x 5 cm',
+        wholesalePrice: 29000,
+        wholesaleMinQty: 6
+      }
+    ];
+
+    const PROMO_BUNDLES = [
+      {
+        id: 'bundle-01',
+        title: 'Paket Seru Anak (Trio Kreatif)',
+        subtitle: 'Kombinasi terbaik untuk motorik, seni, dan bahasa',
+        items: ['Puzzle Kayu Hewan Safari', 'DIY Coloring Set', 'Educational Flash Card Dwibahasa'],
+        normalPrice: 150000,
+        promoPrice: 119000,
+        saveAmount: 31000,
+        discountBadge: 'Hemat 21%',
+        badge: 'Paling Populer',
+        image: 'images/promo-bundle.jpg',
+        description: 'Paket bundling paling laris menggabungkan logika puzzle kayu, keceriaan melukis DIY art kit, dan stimulasi bahasa flash card dalam satu kotak istimewa.'
+      },
+      {
+        id: 'bundle-02',
+        title: 'Paket Arsitek Cilik (STEAM Wonder)',
+        subtitle: 'Eksplorasi bangunan 3D dan gravitasi ruang',
+        items: ['Building Blocks 100 pcs Classic Wood', 'Magnetic Tiles & Blocks 3D (64 Pcs)'],
+        normalPrice: 290000,
+        promoPrice: 235000,
+        saveAmount: 55000,
+        discountBadge: 'Hemat Rp55.000',
+        badge: 'Favorit Ayah-Bunda',
+        image: 'images/prod-building-blocks.jpg',
+        description: 'Gabungan balok kayu presisi dan panel magnetik 3D untuk mengembangkan bakat teknik dan imajinasi konstruksi si kecil.'
+      },
+      {
+        id: 'bundle-03',
+        title: 'Paket Pintar Balita (Montessori Start)',
+        subtitle: 'Fokus sensorik & motorik halus usia emas 2-3 tahun',
+        items: ['Rainbow Stacking Rings Kayu', 'Busy Book Interaktif', 'Wooden Number Puzzle'],
+        normalPrice: 132000,
+        promoPrice: 105000,
+        saveAmount: 27000,
+        discountBadge: 'Hemat 20%',
+        badge: 'Rekomendasi Balita',
+        image: 'images/hero-banner.jpg',
+        description: 'Pilihan tepat mendampingi si kecil di masa golden age dengan aktivitas tactile sensorial yang menyenangkan dan mendidik.'
+      }
+    ];
+
+    const TESTIMONIALS = [
+      {
+        id: 1,
+        name: 'Bunda Sarah Clarissa',
+        role: 'Orang Tua (Anak Usia 3 & 5 Tahun)',
+        city: 'Jakarta Selatan',
+        avatar: '👩‍👧‍👦',
+        rating: 5,
+        comment: 'Puas banget belanja di Toyland.id! Puzzle kayu hewan dan busy book-nya bahannya halus banget, catnya water-based dan tidak berbau sama sekali. Anak-anak jadi betah main tanpa gadget berjam-jam.'
+      },
+      {
+        id: 2,
+        name: 'Pak Hendra Pratama',
+        role: 'Mitra Reseller & Toko Mainan',
+        city: 'Bandung',
+        avatar: '👨‍💼',
+        rating: 5,
+        comment: 'Bergabung sebagai reseller Toyland.id prosesnya sangat mudah dan cepat. Katalog produknya sangat rapi, materi promosi disediakan, dan harga grosirnya memberikan margin keuntungan yang sangat masuk akal.'
+      },
+      {
+        id: 3,
+        name: 'Ibu Ratna Wulandari, S.Pd',
+        role: 'Kepala Sekolah PAUD Bintang Bangsa',
+        city: 'Surabaya',
+        avatar: '👩‍🏫',
+        rating: 5,
+        comment: 'Kami memesan paket building blocks dan flash card dwibahasa untuk perlengkapan kelas PAUD. Kualitasnya sangat memuaskan, kemasannya rapi, dan pengiriman aman tanpa cacat. Sangat direkomendasikan!'
+      }
+    ];
+
+    /* --- APPLICATION STATE --- */
+    let cart = [];
+    try {
+      const saved = localStorage.getItem('toyland_cart_v1');
+      if (saved) cart = JSON.parse(saved);
+    } catch(e) { cart = []; }
+
+    let selectedCategory = 'all';
+    let selectedAge = 'all';
+    let maxPrice = 300000;
+    let currentDetailProduct = null;
+    let detailQty = 1;
+
+    /* --- UTILITIES --- */
+    function formatRupiah(num) {
+      if (typeof num !== 'number') return 'Rp 0';
+      return 'Rp ' + num.toLocaleString('id-ID');
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast-container');
+      toast.innerHTML = `<span>🎈</span> <span>${msg}</span>`;
+      toast.style.display = 'flex';
+      setTimeout(() => { toast.style.display = 'none'; }, 2600);
+    }
+
+    function saveCart() {
+      try {
+        localStorage.setItem('toyland_cart_v1', JSON.stringify(cart));
+      } catch(e){}
+      updateCartBadge();
+    }
+
+    function updateCartBadge() {
+      const totalQty = cart.reduce((acc, item) => acc + item.quantity, 0);
+      const badge = document.getElementById('cart-badge-count');
+      const drawerTotal = document.getElementById('cart-items-total-qty');
+      if (drawerTotal) drawerTotal.innerText = totalQty;
+      if (totalQty > 0) {
+        badge.innerText = totalQty;
+        badge.style.display = 'flex';
+      } else {
+        badge.style.display = 'none';
+      }
+    }
+
+    /* --- PAGE ROUTING / NAVIGATION --- */
+    function switchPage(pageId) {
+      const pages = ['home', 'about', 'products', 'promo', 'reseller', 'contact'];
+      pages.forEach(p => {
+        const el = document.getElementById(`view-${p}`);
+        if (el) el.style.display = (p === pageId) ? 'block' : 'none';
+      });
+
+      // Update navbar links
+      document.querySelectorAll('.nav-link').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-page') === pageId);
+      });
+      document.querySelectorAll('.mobile-nav-link').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-page') === pageId);
+      });
+
+      toggleMobileNav(false);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleMobileNav(open) {
+      const overlay = document.getElementById('mobile-overlay');
+      const drawer = document.getElementById('mobile-drawer');
+      if (open) {
+        overlay.classList.add('open');
+        drawer.classList.add('open');
+      } else {
+        overlay.classList.remove('open');
+        drawer.classList.remove('open');
+      }
+    }
+
+    function triggerSearchFocus() {
+      switchPage('products');
+      setTimeout(() => {
+        const input = document.getElementById('product-search-input');
+        if (input) { input.focus(); input.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+      }, 100);
+    }
+
+    function filterByCategoryAndSwitch(catId) {
+      selectedCategory = catId;
+      switchPage('products');
+      renderCategoryFilters();
+      applyFilters();
+    }
+
+    function filterByAgeAndSwitch(ageId) {
+      selectedAge = ageId;
+      switchPage('products');
+      renderAgeFilters();
+      applyFilters();
+    }
+
+    /* --- PRODUCT CARD HTML GENERATOR --- */
+    function createProductCardHTML(p) {
+      const discountTag = (p.originalPrice > p.price) 
+        ? `<span class="product-original-price">${formatRupiah(p.originalPrice)}</span>` : '';
+
+      return `
+        <div class="product-card" id="card-${p.id}">
+          <div class="product-image-container" onclick="openProductDetail('${p.id}')">
+            <img src="${p.image}" alt="${p.name} - Toyland.id" loading="lazy" />
+            <div class="product-badge-overlay">
+              <span class="badge ${p.badge.includes('Best') ? 'badge-yellow' : p.badge.includes('Hemat') ? 'badge-orange' : 'badge-blue'}">
+                ★ ${p.badge}
+              </span>
+            </div>
+            <div class="product-age-overlay">👶 ${p.ageLabel}</div>
+          </div>
+          <div class="product-details">
+            <span class="product-category">${p.categoryName}</span>
+            <h3 class="product-title" onclick="openProductDetail('${p.id}')">${p.name}</h3>
+            <div class="product-rating-row">
+              <span style="color:#F59E0B;">★</span>
+              <strong>${p.rating}</strong>
+              <span>(${p.reviewsCount} ulasan)</span>
+            </div>
+            <div class="product-price-row">
+              <span class="product-price">${formatRupiah(p.price)}</span>
+              ${discountTag}
+            </div>
+            <div class="product-card-actions">
+              <button class="btn btn-secondary btn-sm" onclick="addToCartById('${p.id}')">+ Keranjang</button>
+              <button class="btn btn-outline-blue btn-sm" onclick="openProductDetail('${p.id}')">Detail</button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    /* --- RENDERING HOMEPAGE DATA --- */
+    function renderHomePage() {
+      // 1. Categories
+      const catContainer = document.getElementById('home-categories-grid');
+      if (catContainer) {
+        catContainer.innerHTML = CATEGORIES.filter(c => c.id !== 'all').map(c => `
+          <div class="category-card" onclick="filterByCategoryAndSwitch('${c.id}')">
+            <div class="category-icon-box">${c.icon}</div>
+            <h3 class="category-name">${c.name}</h3>
+            <span style="font-size:0.8rem; color:var(--color-primary-blue); font-weight:700;">Lihat Koleksi →</span>
+          </div>
+        `).join('');
+      }
+
+      // 2. Best Sellers (8 items)
+      const bestContainer = document.getElementById('home-bestseller-grid');
+      if (bestContainer) {
+        const bests = PRODUCTS.filter(p => p.isBestSeller).slice(0, 8);
+        bestContainer.innerHTML = bests.map(createProductCardHTML).join('');
+      }
+
+      // 3. Testimonials
+      const testContainer = document.getElementById('home-testimonial-grid');
+      if (testContainer) {
+        testContainer.innerHTML = TESTIMONIALS.map(t => `
+          <div class="testimonial-card">
+            <div>
+              <div style="color:#F59E0B; margin-bottom:10px;">★★★★★</div>
+              <p style="font-size:0.92rem; font-style:italic; line-height:1.6; margin-bottom:18px;">"${t.comment}"</p>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:44px; height:44px; border-radius:50%; background:var(--color-yellow-surface); display:flex; align-items:center; justify-content:center; font-size:1.5rem;">${t.avatar}</div>
+              <div>
+                <h4 style="font-family:var(--font-family-display); font-size:0.95rem; font-weight:800; color:#1E293B;">${t.name}</h4>
+                <p style="font-size:0.78rem; color:var(--color-text-muted);">${t.role} • ${t.city}</p>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // 4. Promo Bundles
+      const bundleContainer = document.getElementById('promo-bundles-grid');
+      if (bundleContainer) {
+        bundleContainer.innerHTML = PROMO_BUNDLES.map(b => `
+          <div style="background:#FFF; border-radius:24px; border:1px solid #E2E8F0; overflow:hidden; display:flex; flex-direction:column; box-shadow:var(--shadow-sm);">
+            <div style="height:210px; position:relative; overflow:hidden;">
+              <img src="${b.image}" alt="${b.title}" style="width:100%; height:100%; object-fit:cover;" />
+              <span class="badge badge-yellow" style="position:absolute; top:12px; left:12px;">★ ${b.badge}</span>
+              <span class="badge badge-green" style="position:absolute; bottom:12px; right:12px;">${b.discountBadge}</span>
+            </div>
+            <div style="padding:22px; display:flex; flex-direction:column; flex-grow:1;">
+              <h3 style="font-family:var(--font-family-display); font-size:1.2rem; font-weight:800; margin-bottom:4px;">${b.title}</h3>
+              <p style="font-size:0.84rem; color:var(--color-primary-blue); font-weight:600; margin-bottom:12px;">${b.subtitle}</p>
+              <div style="background:#F8FAFC; padding:12px; border-radius:12px; margin-bottom:14px; font-size:0.84rem;">
+                <strong style="display:block; color:#64748B; font-size:0.75rem; text-transform:uppercase; margin-bottom:4px;">Isi Paket:</strong>
+                ${b.items.map(it => `<div>✓ ${it}</div>`).join('')}
+              </div>
+              <p style="font-size:0.86rem; color:var(--color-text-muted); line-height:1.5; margin-bottom:16px;">${b.description}</p>
+              <div style="margin-top:auto; padding-top:14px; border-top:1px solid #E2E8F0; display:flex; align-items:baseline; justify-content:space-between; margin-bottom:14px;">
+                <div>
+                  <div style="font-size:0.76rem; color:#94A3B8; text-decoration:line-through;">${formatRupiah(b.normalPrice)}</div>
+                  <div style="font-family:var(--font-family-display); font-size:1.4rem; font-weight:900; color:var(--color-primary-blue);">${formatRupiah(b.promoPrice)}</div>
+                </div>
+                <span class="badge badge-orange">Hemat ${formatRupiah(b.saveAmount)}</span>
+              </div>
+              <button class="btn btn-primary" style="width:100%;" onclick="addBundleToCart('${b.id}')">Beli Paket Ini 🎁</button>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    /* --- CATALOG FILTERING & SORTING --- */
+    function renderCategoryFilters() {
+      const container = document.getElementById('category-filter-list');
+      if (!container) return;
+      container.innerHTML = CATEGORIES.map(c => `
+        <button onclick="setCategoryFilter('${c.id}')" style="display:flex; justify-content:space-between; align-items:center; padding:7px 10px; border-radius:8px; font-size:0.86rem; text-align:left; background:${selectedCategory === c.id ? 'var(--color-blue-light)' : 'transparent'}; color:${selectedCategory === c.id ? 'var(--color-primary-blue)' : 'var(--color-text-main)'}; font-weight:${selectedCategory === c.id ? '700' : '500'};">
+          <span>${c.name}</span>
+          <span style="font-size:0.75rem; opacity:0.6;">(${c.count})</span>
+        </button>
+      `).join('');
+    }
+
+    function renderAgeFilters() {
+      const container = document.getElementById('age-filter-list');
+      if (!container) return;
+      container.innerHTML = AGE_RANGES.map(a => `
+        <button onclick="setAgeFilter('${a.id}')" style="display:flex; justify-content:space-between; align-items:center; padding:7px 10px; border-radius:8px; font-size:0.86rem; text-align:left; background:${selectedAge === a.id ? 'var(--color-yellow-surface)' : 'transparent'}; color:${selectedAge === a.id ? '#92400E' : 'var(--color-text-main)'}; font-weight:${selectedAge === a.id ? '700' : '500'};">
+          <span>${a.label}</span>
+        </button>
+      `).join('');
+    }
+
+    function setCategoryFilter(catId) {
+      selectedCategory = catId;
+      renderCategoryFilters();
+      applyFilters();
+    }
+
+    function setAgeFilter(ageId) {
+      selectedAge = ageId;
+      renderAgeFilters();
+      applyFilters();
+    }
+
+    function updatePriceSlider(val) {
+      maxPrice = Number(val);
+      document.getElementById('price-slider-display').innerText = formatRupiah(maxPrice);
+      applyFilters();
+    }
+
+    function resetFilters() {
+      selectedCategory = 'all';
+      selectedAge = 'all';
+      maxPrice = 300000;
+      document.getElementById('price-slider').value = 300000;
+      document.getElementById('price-slider-display').innerText = 'Rp300.000';
+      document.getElementById('product-search-input').value = '';
+      document.getElementById('product-sort-select').value = 'bestSeller';
+      renderCategoryFilters();
+      renderAgeFilters();
+      applyFilters();
+    }
+
+    function applyFilters() {
+      const searchVal = (document.getElementById('product-search-input')?.value || '').toLowerCase().trim();
+      const sortVal = document.getElementById('product-sort-select')?.value || 'bestSeller';
+
+      let results = PRODUCTS.filter(p => {
+        if (selectedCategory !== 'all' && p.category !== selectedCategory) return false;
+        if (selectedAge !== 'all' && p.ageRange !== selectedAge) return false;
+        if (p.price > maxPrice) return false;
+        if (searchVal) {
+          const matchName = p.name.toLowerCase().includes(searchVal);
+          const matchDesc = p.description.toLowerCase().includes(searchVal);
+          const matchCat = p.categoryName.toLowerCase().includes(searchVal);
+          if (!matchName && !matchDesc && !matchCat) return false;
+        }
+        return true;
+      });
+
+      // Sorting
+      results.sort((a, b) => {
+        if (sortVal === 'priceLow') return a.price - b.price;
+        if (sortVal === 'priceHigh') return b.price - a.price;
+        if (sortVal === 'newest') return b.reviewsCount - a.reviewsCount;
+        if (sortVal === 'bestSeller') {
+          if (a.isBestSeller && !b.isBestSeller) return -1;
+          if (!a.isBestSeller && b.isBestSeller) return 1;
+          return b.rating - a.rating;
+        }
+        return 0;
+      });
+
+      const countDisplay = document.getElementById('product-count-display');
+      if (countDisplay) countDisplay.innerText = results.length;
+
+      const container = document.getElementById('catalog-products-grid');
+      if (!container) return;
+
+      if (results.length === 0) {
+        container.innerHTML = `
+          <div style="grid-column: 1 / -1; background:#FFF; border-radius:20px; border:1px solid #E2E8F0; padding:40px; text-align:center;">
+            <div style="font-size:2.8rem; margin-bottom:8px;">🔍</div>
+            <h3 style="font-family:var(--font-family-display); font-size:1.2rem; font-weight:800; margin-bottom:6px;">Tidak ada mainan yang cocok dengan filter</h3>
+            <p style="color:var(--color-text-muted); font-size:0.9rem; margin-bottom:16px;">Silakan atur ulang kata kunci pencarian atau batas harga.</p>
+            <button class="btn btn-primary" onclick="resetFilters()">Reset Semua Filter</button>
+          </div>
+        `;
+      } else {
+        container.innerHTML = results.map(createProductCardHTML).join('');
+      }
+    }
+
+    /* --- PRODUCT DETAIL MODAL --- */
+    function openProductDetail(productId) {
+      const p = PRODUCTS.find(it => it.id === productId);
+      if (!p) return;
+      currentDetailProduct = p;
+      detailQty = 1;
+
+      // Recommended items
+      const recs = PRODUCTS.filter(it => it.id !== p.id && (it.category === p.category || it.ageRange === p.ageRange)).slice(0, 3);
+      const waInquiryText = encodeURIComponent(`Halo Toyland.id, saya ingin bertanya tentang produk: ${p.name} (${formatRupiah(p.price)}). Apakah masih tersedia? Terima kasih.`);
+
+      const modalBody = document.getElementById('product-detail-modal-body');
+      modalBody.innerHTML = `
+        <div>
+          <div class="modal-gallery">
+            <img src="${p.image}" alt="${p.name}" id="detail-main-img" />
+          </div>
+          <div style="margin-top:20px; padding:16px; background:#F8FAFC; border-radius:14px; border:1px solid #E2E8F0; font-size:0.85rem;">
+            <div style="font-weight:800; color:var(--color-primary-blue); margin-bottom:6px; text-transform:uppercase;">Spesifikasi Produk</div>
+            <div><strong>Rekomendasi Usia:</strong> ${p.ageLabel}</div>
+            <div><strong>Material:</strong> ${p.material}</div>
+            <div><strong>Dimensi:</strong> ${p.size}</div>
+            <div><strong>Stok Tersedia:</strong> ${p.stock} pcs</div>
+          </div>
+        </div>
+
+        <div>
+          <div style="display:flex; gap:8px; margin-bottom:6px;">
+            <span class="badge badge-blue">${p.categoryName}</span>
+            <span class="badge badge-yellow">★ ${p.badge}</span>
+          </div>
+          <h2 style="font-family:var(--font-family-display); font-size:1.55rem; font-weight:800; line-height:1.25; margin-bottom:10px;">${p.name}</h2>
+          
+          <div style="display:flex; align-items:center; gap:10px; font-size:0.88rem; color:var(--color-text-muted); margin-bottom:14px;">
+            <span style="color:#F59E0B; font-weight:bold;">★ ${p.rating}</span>
+            <span>•</span>
+            <span>${p.reviewsCount} ulasan</span>
+            <span>•</span>
+            <span style="color:#10B981; font-weight:700;">Tersedia ${p.stock} pcs</span>
+          </div>
+
+          <div style="display:flex; align-items:baseline; gap:10px; margin-bottom:16px;">
+            <span style="font-family:var(--font-family-display); font-size:1.75rem; font-weight:900; color:var(--color-primary-blue);">${formatRupiah(p.price)}</span>
+            ${p.originalPrice > p.price ? `<span style="text-decoration:line-through; color:#94A3B8; font-size:1rem;">${formatRupiah(p.originalPrice)}</span>` : ''}
+          </div>
+
+          <div style="background:#FEF3C7; padding:10px 14px; border-radius:10px; font-size:0.84rem; color:#92400E; margin-bottom:16px;">
+            💡 <strong>Harga Grosir:</strong> ${formatRupiah(p.wholesalePrice)} / pcs (Min. ${p.wholesaleMinQty} pcs). Sangat cocok untuk reseller!
+          </div>
+
+          <p style="font-size:0.9rem; color:var(--color-text-muted); line-height:1.6; margin-bottom:16px;">${p.description}</p>
+
+          <div style="margin-bottom:20px;">
+            <strong style="display:block; font-size:0.9rem; margin-bottom:6px;">🎯 Manfaat Tumbuh Kembang:</strong>
+            <ul style="display:flex; flex-direction:column; gap:4px; font-size:0.86rem; color:#334155;">
+              ${p.benefits.map(b => `<li><span style="color:#10B981; font-weight:bold;">✓</span> ${b}</li>`).join('')}
+            </ul>
+          </div>
+
+          <!-- Quantity Selector -->
+          <div style="display:flex; align-items:center; gap:16px; padding:12px 0; border-top:1px solid #E2E8F0; border-bottom:1px solid #E2E8F0; margin-bottom:20px;">
+            <span style="font-size:0.9rem; font-weight:700;">Jumlah:</span>
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeDetailQty(-1)">-</button>
+              <span id="detail-qty-display" style="font-weight:800; min-width:26px; text-align:center;">1</span>
+              <button class="qty-btn" onclick="changeDetailQty(1)">+</button>
+            </div>
+            <span style="font-size:0.84rem; color:#64748B;">Subtotal: <strong id="detail-subtotal-display" style="color:#0F172A;">${formatRupiah(p.price)}</strong></span>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+              <button class="btn btn-secondary btn-lg" onclick="addCurrentDetailToCart(false)">+ Tambah Keranjang</button>
+              <button class="btn btn-primary btn-lg" onclick="addCurrentDetailToCart(true)">Beli Sekarang ⚡</button>
+            </div>
+            <a href="https://wa.me/?text=${waInquiryText}" target="_blank" rel="noreferrer" class="btn btn-whatsapp" style="width:100%;">
+              💬 Tanya via WhatsApp Langsung
+            </a>
+          </div>
+        </div>
+
+        <!-- Recommendations Row -->
+        <div style="grid-column: 1 / -1; border-top:1px solid #E2E8F0; padding-top:20px; margin-top:10px;">
+          <h4 style="font-family:var(--font-family-display); font-size:1.05rem; font-weight:800; margin-bottom:12px;">Sering Dilihat Bersamaan:</h4>
+          <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:14px;">
+            ${recs.map(r => `
+              <div onclick="openProductDetail('${r.id}')" style="display:flex; align-items:center; gap:10px; padding:8px; border:1px solid #E2E8F0; border-radius:12px; cursor:pointer;">
+                <img src="${r.image}" alt="${r.name}" style="width:48px; height:48px; border-radius:8px; object-fit:cover;" />
+                <div>
+                  <div style="font-size:0.82rem; font-weight:700; line-height:1.2;">${r.name}</div>
+                  <div style="font-size:0.82rem; font-weight:800; color:var(--color-primary-blue); margin-top:2px;">${formatRupiah(r.price)}</div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+
+      document.getElementById('product-detail-modal').classList.add('open');
+    }
+
+    function closeProductDetailModal() {
+      document.getElementById('product-detail-modal').classList.remove('open');
+    }
+
+    function changeDetailQty(delta) {
+      if (!currentDetailProduct) return;
+      detailQty = Math.max(1, Math.min(currentDetailProduct.stock, detailQty + delta));
+      document.getElementById('detail-qty-display').innerText = detailQty;
+      document.getElementById('detail-subtotal-display').innerText = formatRupiah(currentDetailProduct.price * detailQty);
+    }
+
+    function addCurrentDetailToCart(proceedCheckout) {
+      if (!currentDetailProduct) return;
+      addToCartObject(currentDetailProduct, detailQty);
+      closeProductDetailModal();
+      if (proceedCheckout) {
+        openCheckoutModal();
+      }
+    }
+
+    /* --- CART OPERATIONS --- */
+    function addToCartById(productId) {
+      const p = PRODUCTS.find(it => it.id === productId);
+      if (p) addToCartObject(p, 1);
+    }
+
+    function addBundleToCart(bundleId) {
+      const b = PROMO_BUNDLES.find(it => it.id === bundleId);
+      if (b) {
+        addToCartObject({
+          id: b.id,
+          name: b.title,
+          price: b.promoPrice,
+          image: b.image
+        }, 1);
+      }
+    }
+
+    function addToCartObject(item, qty) {
+      const existing = cart.find(it => it.id === item.id);
+      if (existing) {
+        existing.quantity += qty;
+      } else {
+        cart.push({
+          id: item.id,
+          name: item.name,
+          price: item.price,
+          image: item.image,
+          quantity: qty
+        });
+      }
+      saveCart();
+      showToast(`"${item.name}" ditambahkan ke keranjang!`);
+    }
+
+    function updateCartItemQty(id, newQty) {
+      if (newQty <= 0) {
+        cart = cart.filter(it => it.id !== id);
+      } else {
+        const item = cart.find(it => it.id === id);
+        if (item) item.quantity = newQty;
+      }
+      saveCart();
+      renderCartDrawer();
+    }
+
+    function removeCartItem(id) {
+      cart = cart.filter(it => it.id !== id);
+      saveCart();
+      renderCartDrawer();
+      showToast('Item dihapus dari keranjang.');
+    }
+
+    function openCartDrawer() {
+      renderCartDrawer();
+      document.getElementById('cart-drawer-overlay').classList.add('open');
+      document.getElementById('cart-drawer').classList.add('open');
+    }
+
+    function closeCartDrawer() {
+      document.getElementById('cart-drawer-overlay').classList.remove('open');
+      document.getElementById('cart-drawer').classList.remove('open');
+    }
+
+    function renderCartDrawer() {
+      const container = document.getElementById('cart-items-container');
+      const footer = document.getElementById('cart-footer-box');
+      if (!container || !footer) return;
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div style="flex-grow:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:30px; text-align:center;">
+            <div style="font-size:3.5rem; margin-bottom:10px;">🧸</div>
+            <h3 style="font-family:var(--font-family-display); font-size:1.15rem; font-weight:800; margin-bottom:6px;">Keranjangmu masih kosong.</h3>
+            <p style="font-size:0.86rem; color:var(--color-text-muted); margin-bottom:20px;">Yuk, temukan mainan edukatif pilihan untuk si kecil!</p>
+            <button class="btn btn-primary" onclick="closeCartDrawer(); switchPage('products');">Mulai Belanja</button>
+          </div>
+        `;
+        footer.innerHTML = '';
+        return;
+      }
+
+      container.innerHTML = cart.map(item => `
+        <div class="cart-item">
+          <img src="${item.image}" alt="${item.name}" class="cart-item-img" />
+          <div>
+            <h4 style="font-family:var(--font-family-display); font-size:0.92rem; font-weight:700; margin-bottom:2px; line-height:1.2;">${item.name}</h4>
+            <div style="font-size:0.85rem; font-weight:700; color:var(--color-primary-blue);">${formatRupiah(item.price)}</div>
+            <div class="qty-control">
+              <button class="qty-btn" onclick="updateCartItemQty('${item.id}', ${item.quantity - 1})">-</button>
+              <span style="font-weight:700; font-size:0.85rem; min-width:18px; text-align:center;">${item.quantity}</span>
+              <button class="qty-btn" onclick="updateCartItemQty('${item.id}', ${item.quantity + 1})">+</button>
+            </div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-weight:800; font-size:0.88rem; color:#1E293B; margin-bottom:6px;">${formatRupiah(item.price * item.quantity)}</div>
+            <button onclick="removeCartItem('${item.id}')" style="font-size:0.78rem; color:#EF4444; text-decoration:underline;">Hapus</button>
+          </div>
+        </div>
+      `).join('');
+
+      const subtotal = cart.reduce((acc, it) => acc + (it.price * it.quantity), 0);
+      const totalCount = cart.reduce((acc, it) => acc + it.quantity, 0);
+
+      footer.innerHTML = `
+        <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:0.92rem;">
+          <span style="color:var(--color-text-muted);">Total Kuantitas:</span>
+          <strong>${totalCount} item</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; margin-bottom:14px; padding-top:8px; border-top:1px dashed #E2E8F0; font-size:1.15rem; font-weight:800;">
+          <span>Subtotal Pesanan:</span>
+          <span style="color:var(--color-primary-blue);">${formatRupiah(subtotal)}</span>
+        </div>
+        <button class="btn btn-primary btn-lg" style="width:100%; margin-bottom:8px;" onclick="closeCartDrawer(); openCheckoutModal();">
+          Lanjut ke Checkout 🚀
+        </button>
+        <button class="btn btn-outline-blue btn-sm" style="width:100%;" onclick="closeCartDrawer(); switchPage('products');">
+          Lanjut Belanja Mainan Lain
+        </button>
+        <div style="margin-top:10px; font-size:0.75rem; color:#94A3B8; text-align:center;">
+          🔒 Simulasi Transaksi • Pesanan Otomatis Diteruskan ke WhatsApp
+        </div>
+      `;
+    }
+
+    /* --- CHECKOUT SIMULATION --- */
+    function openCheckoutModal() {
+      if (cart.length === 0) {
+        showToast('Keranjang masih kosong!');
+        switchPage('products');
+        return;
+      }
+
+      const subtotal = cart.reduce((acc, it) => acc + (it.price * it.quantity), 0);
+      const content = document.getElementById('checkout-modal-content');
+      content.innerHTML = `
+        <span class="badge badge-blue" style="margin-bottom:6px;">Simulasi Checkout Digital Marketing</span>
+        <h2 style="font-family:var(--font-family-display); font-size:1.55rem; font-weight:800; margin-bottom:4px;">Konfirmasi Pemesanan</h2>
+        <p style="font-size:0.88rem; color:var(--color-text-muted); margin-bottom:18px;">
+          Lengkapi data alamat pengiriman. Pesanan Anda akan dirangkum rapi dan diteruskan ke WhatsApp resmi Toyland.id.
+        </p>
+
+        <!-- Order Summary Box -->
+        <div style="background:#F8FAFC; border-radius:12px; padding:14px; border:1px solid #E2E8F0; margin-bottom:20px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+            <strong style="font-size:0.92rem;">Ringkasan Pesanan:</strong>
+            <strong style="font-size:1.1rem; color:var(--color-primary-blue);">${formatRupiah(subtotal)}</strong>
+          </div>
+          <div style="max-height:90px; overflow-y:auto; font-size:0.84rem; color:#475569;">
+            ${cart.map(it => `<div>• ${it.name} (${it.quantity}x) - ${formatRupiah(it.price * it.quantity)}</div>`).join('')}
+          </div>
+        </div>
+
+        <form onsubmit="handleCheckoutFormSubmit(event)">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+            <div class="form-group">
+              <label class="form-label">Nama Lengkap *</label>
+              <input type="text" id="chk-name" required class="form-input" placeholder="Nama Anda" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Nomor WhatsApp *</label>
+              <input type="tel" id="chk-phone" required class="form-input" placeholder="0812xxxxxxxx" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Alamat Lengkap Pengiriman *</label>
+            <textarea id="chk-address" required rows="2" class="form-textarea" placeholder="Nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan"></textarea>
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+            <div class="form-group">
+              <label class="form-label">Kota / Kabupaten *</label>
+              <input type="text" id="chk-city" required class="form-input" placeholder="Contoh: Bandung" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Metode Pembayaran (Simulasi)</label>
+              <select id="chk-payment" class="form-select">
+                <option value="Transfer Bank (BCA / Mandiri / BRI)">Transfer Bank (BCA / Mandiri / BRI)</option>
+                <option value="E-Wallet (GoPay / OVO / ShopeePay)">E-Wallet (GoPay, OVO, ShopeePay)</option>
+                <option value="COD (Bayar di Tempat)">COD (Bayar di Tempat saat kurir tiba)</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%; margin-top:10px;">
+            Proses Pesanan & Buka WhatsApp 💬
+          </button>
+        </form>
+      `;
+
+      document.getElementById('checkout-modal').classList.add('open');
+    }
+
+    function closeCheckoutModal() {
+      document.getElementById('checkout-modal').classList.remove('open');
+    }
+
+    function handleCheckoutFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('chk-name').value;
+      const phone = document.getElementById('chk-phone').value;
+      const address = document.getElementById('chk-address').value;
+      const city = document.getElementById('chk-city').value;
+      const payment = document.getElementById('chk-payment').value;
+
+      const subtotal = cart.reduce((acc, it) => acc + (it.price * it.quantity), 0);
+      const productListText = cart.map((it, idx) => `${idx + 1}. ${it.name} (${it.quantity}x) - ${formatRupiah(it.price * it.quantity)}`).join('\n');
+
+      const message = `Halo Toyland.id, saya ingin melakukan pemesanan.
+
+Nama: ${name}
+WhatsApp: ${phone}
+Alamat: ${address}, ${city}
+Metode Pembayaran: ${payment}
+
+Daftar Produk:
+${productListText}
+
+Total: ${formatRupiah(subtotal)}
+
+Mohon informasi selanjutnya. Terima kasih.`;
+
+      const waUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
+
+      // Success screen
+      const content = document.getElementById('checkout-modal-content');
+      content.innerHTML = `
+        <div style="text-align:center; padding:15px 0;">
+          <div style="font-size:3.5rem; margin-bottom:12px;">🎉</div>
+          <h2 style="font-family:var(--font-family-display); font-size:1.6rem; font-weight:800; margin-bottom:6px;">Pesanan Berhasil Disiapkan!</h2>
+          <p style="font-size:0.92rem; color:var(--color-text-muted); margin-bottom:20px;">
+            Terima kasih, <strong>${name}</strong>! Ringkasan pesanan senilai <strong>${formatRupiah(subtotal)}</strong> sudah siap dikirimkan.
+          </p>
+          <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:14px; padding:16px; text-align:left; font-size:0.84rem; margin-bottom:22px;">
+            <strong style="color:#166534; display:block; margin-bottom:6px;">Format Pesanan WhatsApp Otomatis:</strong>
+            <pre style="white-space:pre-wrap; font-family:monospace; font-size:0.8rem; background:#FFF; padding:10px; border-radius:8px; border:1px solid #DCFCE7;">${message}</pre>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:10px; max-width:380px; margin:0 auto;">
+            <a href="${waUrl}" target="_blank" rel="noreferrer" class="btn btn-whatsapp btn-lg">Kirim Pesanan ke WhatsApp Sekarang 💬</a>
+            <button class="btn btn-outline-blue" onclick="cart = []; saveCart(); closeCheckoutModal(); switchPage('home');">Selesai & Kembali ke Home</button>
+          </div>
+        </div>
+      `;
+    }
+
+    /* --- FORM SUBMITS (RESELLER & CONTACT) --- */
+    function handleResellerFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('reseller-name').value;
+      const phone = document.getElementById('reseller-phone').value;
+      const city = document.getElementById('reseller-city').value;
+      const type = document.getElementById('reseller-type').value;
+      const qty = document.getElementById('reseller-qty').value;
+      const notes = document.getElementById('reseller-notes').value || '-';
+
+      const message = `Halo Tim Kemitraan Toyland.id, saya tertarik mendaftar program Grosir / Reseller.
+
+Nama: ${name}
+WhatsApp: ${phone}
+Kota: ${city}
+Jenis Bisnis: ${type}
+Estimasi Volume Pembelian: ${qty}
+Pesan Tambahan: ${notes}
+
+Mohon informasi katalog grosir dan panduan reseller selanjutnya. Terima kasih.`;
+
+      window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
+      showToast('Membuka WhatsApp untuk pendaftaran...');
+    }
+
+    function handleContactFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contact-name').value;
+      const phone = document.getElementById('contact-phone').value;
+      const email = document.getElementById('contact-email').value || '-';
+      const msg = document.getElementById('contact-message').value;
+
+      const message = `Halo Toyland.id, saya ingin bertanya:
+Nama: ${name}
+WhatsApp: ${phone}
+Email: ${email}
+Pesan: ${msg}
+
+Mohon bantuannya. Terima kasih.`;
+
+      window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
+      showToast('Membuka WhatsApp pesan kontak...');
+    }
+
+    function toggleWaPopover() {
+      const popover = document.getElementById('wa-quick-popover');
+      popover.style.display = (popover.style.display === 'none' || popover.style.display === '') ? 'block' : 'none';
+    }
+
+    /* --- INITIALIZATION --- */
+    window.addEventListener('DOMContentLoaded', () => {
+      renderHomePage();
+      renderCategoryFilters();
+      renderAgeFilters();
+      applyFilters();
+      updateCartBadge();
+    });
+  </script>
+</body>
+</html>
